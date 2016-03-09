@@ -12,7 +12,8 @@
 @implementation LoginViewController
 
 - (IBAction)loginDoit:(id)sender {
-    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:@"testValue",@"testKey", nil];
+
+    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:@"log",@"inefaceMode",@"test123",@"userName", @"123456",@"passWord",nil];
     HttpRequest_OS *http = [[HttpRequest_OS alloc]init];
     
     [http synchronousRequestWithType:DATATYPE_INPUT_XML requestUrl:[NSURL URLWithString:@"http://api.openweathermap.org/data/2.5/weather?q=London,uk"] InputDataDic:testDic];
