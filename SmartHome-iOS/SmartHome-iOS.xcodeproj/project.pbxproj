@@ -10,6 +10,8 @@
 		2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
 		2036D6EB1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
 		2036D6EC1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
+		2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047BFF71C91125F006E418E /* RegisterViewController.m */; };
+		2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2047BFF81C91125F006E418E /* RegisterViewController.xib */; };
 		2057FA461C8923C900CC65FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FA451C8923C900CC65FD /* main.m */; };
 		2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FA481C8923C900CC65FD /* AppDelegate.m */; };
 		2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2057FA501C8923C900CC65FD /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 		2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
 		2057FAAB1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
 		2057FAAC1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
+		207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 207734CD1C913BD100B5F18B /* HttpInterFace.m */; };
 		4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51472C9056CF3EB7CAE501D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2036D6E81C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSDictionaryCategory.h"; sourceTree = "<group>"; };
 		2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSDictionaryCategory.m"; sourceTree = "<group>"; };
+		2047BFF61C91125F006E418E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		2047BFF71C91125F006E418E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		2047BFF81C91125F006E418E /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		2057FA411C8923C900CC65FD /* SmartHome-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmartHome-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2057FA451C8923C900CC65FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2057FA471C8923C900CC65FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		2057FAA11C89312F00CC65FD /* DefineValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineValue.h; sourceTree = "<group>"; };
 		2057FAA81C89341700CC65FD /* HttpRequest_OS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest_OS.h; sourceTree = "<group>"; };
 		2057FAA91C89341700CC65FD /* HttpRequest_OS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest_OS.m; sourceTree = "<group>"; };
+		207734CC1C913BD100B5F18B /* HttpInterFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInterFace.h; sourceTree = "<group>"; };
+		207734CD1C913BD100B5F18B /* HttpInterFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpInterFace.m; sourceTree = "<group>"; };
 		6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51472C9056CF3EB7CAE501D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -225,6 +233,9 @@
 				2057FA941C892A2B00CC65FD /* LoginViewController.h */,
 				2057FA951C892A2B00CC65FD /* LoginViewController.m */,
 				2057FA9D1C892B1300CC65FD /* LoginViewController.xib */,
+				2047BFF61C91125F006E418E /* RegisterViewController.h */,
+				2047BFF71C91125F006E418E /* RegisterViewController.m */,
+				2047BFF81C91125F006E418E /* RegisterViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -234,6 +245,8 @@
 			children = (
 				2057FAA81C89341700CC65FD /* HttpRequest_OS.h */,
 				2057FAA91C89341700CC65FD /* HttpRequest_OS.m */,
+				207734CC1C913BD100B5F18B /* HttpInterFace.h */,
+				207734CD1C913BD100B5F18B /* HttpInterFace.m */,
 			);
 			path = HttpRequest;
 			sourceTree = "<group>";
@@ -364,6 +377,7 @@
 				2057FA541C8923C900CC65FD /* LaunchScreen.storyboard in Resources */,
 				2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */,
 				2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */,
+				2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,10 +456,12 @@
 				2057FA8B1C89270E00CC65FD /* NSString+NSStringCategory.m in Sources */,
 				2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 				2057FA961C892A2B00CC65FD /* LoginViewController.m in Sources */,
+				2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */,
 				2057FA851C89267C00CC65FD /* Global_Variable.m in Sources */,
 				2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */,
 				2057FA461C8923C900CC65FD /* main.m in Sources */,
 				2057FA901C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
+				207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

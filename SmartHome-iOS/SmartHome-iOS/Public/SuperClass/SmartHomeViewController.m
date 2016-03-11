@@ -10,4 +10,8 @@
 
 @implementation SmartHomeViewController
 
+-(void)viewDidLoad{
+
+}
+
 @end

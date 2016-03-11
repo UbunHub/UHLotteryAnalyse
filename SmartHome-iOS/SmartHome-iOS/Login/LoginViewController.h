@@ -10,7 +10,4 @@
 
 @interface LoginViewController : SmartHomeViewController
 
-//登录按钮
-@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
-
 @end

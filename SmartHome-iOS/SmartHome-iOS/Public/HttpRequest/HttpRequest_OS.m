@@ -7,7 +7,6 @@
 //
 
 #import "HttpRequest_OS.h"
-#import "NSDictionary+NSDictionaryCategory.h"
 #import "AFURLSessionManager.h"
 
 @implementation HttpRequest_OS
@@ -16,27 +15,21 @@
  * 同步请求
  * dataType 请求服务器发送的数据格式
  */
--(void)synchronousRequestWithType:(HTTPREQUEST_DATATYPE_INPUT)dataType requestUrl:(NSURL*)requestUrl InputDataDic:(NSDictionary*)inputDataDic{
+-(void)synchronousRequestWithuserName:(NSString *)userName
+                           requestUrl:(NSURL*)requestUrl
+                         requestStr:(NSString*)requestStr
+                    completionHandler:(nullable void (^)(NSURLResponse *, id _Nullable, NSError * _Nullable))completionHandler{
     
-    NSString *jsonPostStr = [inputDataDic jsonStringWithPrettyPrint:NO];
-    NSLog(@"jsonPostStr:%@",jsonPostStr);
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
-    NSURL *URL = [NSURL URLWithString:@"http://127.0.0.1:8889/interface"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl];
     [request setHTTPMethod:@"post"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setHTTPBody:[jsonPostStr dataUsingEncoding:NSUTF8StringEncoding]];
-    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            NSLog(@"response:%@ \n responseObject:%@", response, responseObject);
-        }
-    }];
+    [request setValue:userName forHTTPHeaderField:@"userName"];
+    [request setHTTPBody:[requestStr dataUsingEncoding:NSUTF8StringEncoding]];
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:completionHandler];
     [dataTask resume];
 }
 

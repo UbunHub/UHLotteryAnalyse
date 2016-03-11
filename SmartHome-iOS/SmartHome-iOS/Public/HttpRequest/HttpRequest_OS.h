@@ -16,5 +16,8 @@
  * dataType 请求服务器发送的数据格式
  * requestUrl 请求的路径
  */
--(void)synchronousRequestWithType:(HTTPREQUEST_DATATYPE_INPUT)dataType requestUrl:(NSURL*)requestUrl InputDataDic:(NSDictionary*)inputDataDic;
+-(void)synchronousRequestWithuserName:(NSString *)userName
+                           requestUrl:(NSURL*)requestUrl
+                           requestStr:(NSString*)requestStr
+                    completionHandler:(nullable void (^)(NSURLResponse *, id _Nullable, NSError * _Nullable))completionHandler;
 @end

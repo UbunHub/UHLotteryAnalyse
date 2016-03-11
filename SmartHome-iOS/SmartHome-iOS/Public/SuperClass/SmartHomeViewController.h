@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SmartHomeViewController : UIViewController
+#import "HttpInterFace.h"
+@interface SmartHomeViewController : UIViewController<HttpInterFaceDelegate>
 
 @end

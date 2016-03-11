@@ -7,7 +7,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
-                <outlet property="loginBtn" destination="sST-XH-KDL" id="R2y-VS-JeK"/>
+                <outlet property="loginBtn" destination="sZC-qc-eAT" id="lAC-vg-vcS"/>
+                <outlet property="password_tf" destination="Zhw-6C-o7e" id="GG9-uD-bap"/>
+                <outlet property="registerBtn" destination="sST-XH-KDL" id="8VZ-Rn-cQs"/>
+                <outlet property="userName_tf" destination="lip-Wr-GWw" id="PQD-HA-Zkl"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Uis-Ax-mD9"/>
             </connections>
         </placeholder>
@@ -16,16 +19,45 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sST-XH-KDL">
-                    <rect key="frame" x="143" y="419" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZC-qc-eAT">
+                    <rect key="frame" x="200" y="465" width="71" height="30"/>
+                    <state key="normal" title="登录"/>
                     <connections>
-                        <action selector="loginDoit:" destination="-1" eventType="touchUpInside" id="QG8-bp-VeM"/>
+                        <action selector="loginDoit:" destination="-1" eventType="touchUpInside" id="tEu-jm-6nT"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lip-Wr-GWw">
+                    <rect key="frame" x="91" y="346" width="192" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-6C-o7e">
+                    <rect key="frame" x="91" y="404" width="192" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obo-sC-X4H">
+                    <rect key="frame" x="21" y="350" width="68" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrR-IT-7Tj">
+                    <rect key="frame" x="21" y="408" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sST-XH-KDL">
+                    <rect key="frame" x="76" y="465" width="65" height="30"/>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="registerDoit:" destination="-1" eventType="touchUpInside" id="YkX-CT-whj"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <point key="canvasLocation" x="305" y="422"/>
+            <point key="canvasLocation" x="169" y="407"/>
         </view>
     </objects>
 </document>
