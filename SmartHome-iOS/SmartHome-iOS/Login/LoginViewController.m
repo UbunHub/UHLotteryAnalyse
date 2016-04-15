@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import "DeviceGroupVC.h"
 
 @interface LoginViewController()
 
@@ -24,6 +25,19 @@
 
 @implementation LoginViewController
 
+
+-(void)viewDidLoad{
+    [super viewDidLoad];
+
+    _loginBtn.backgroundColor = [UIColor redColor];
+    _loginBtn.layer.masksToBounds = NO;
+     [_loginBtn.layer setBorderWidth:0.5];//设置边框宽度
+    [_loginBtn.layer setBorderColor: [[UIColor colorWithRed: 255.0/255   green:255.0/255 blue:0.0/255 alpha:0.5 ]CGColor]];//设置边框颜色
+    _loginBtn.layer.cornerRadius = 5; // 设置层的弧度
+    _loginBtn.layer.shadowOffset = CGSizeMake(0, 0);//设置阴影偏移量
+    _loginBtn.layer.shadowColor =  [[UIColor colorWithRed: 255.0/255   green:255.0/255 blue:0.0/255 alpha:1 ]CGColor];//设置阴影颜色
+    _loginBtn.layer.shadowOpacity = 0.5;//设置阴影的透明度
+}
 //登录
 - (IBAction)loginDoit:(id)sender {
     
@@ -42,7 +56,17 @@
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
--(void)httpInterFaceDataWithDic:(NSDictionary *)dataDic error:(NSError *)error{
-    
+-(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSDictionary *)interFaceMode{
+
+    if (dataCode == 0) {
+
+        [Global_Variable sharedInstance].userleave = [[dataDic objectForKey:@"userLevel"]integerValue];
+        DeviceGroupVC *deviceGroupVC = [[DeviceGroupVC alloc]init];
+        UINavigationController *deviceGroupNav = [[UINavigationController alloc]initWithRootViewController:deviceGroupVC];
+        UIWindow *awindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
+        awindow.rootViewController = deviceGroupNav;
+        
+    }
 }
+
 @end

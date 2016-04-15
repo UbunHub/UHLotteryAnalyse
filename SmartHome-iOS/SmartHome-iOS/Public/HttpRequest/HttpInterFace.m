@@ -13,15 +13,15 @@
 @implementation HttpInterFace
 
 -(instancetype)initWithDelegate:(id<HttpInterFaceDelegate>)delegate{
-    
+
     if (self == [super init]) {
         _delegate = delegate;
     }
     return self;
 }
 
--(void)requestWithData:(id)data{
-    
+-(void)requestWithData:(NSDictionary*)data{
+
     NSString *requestStr;
     _inputDataType = (_inputDataType)?_inputDataType:DATATYPE_INPUT_JSON;
     HttpRequest_OS *http = [[HttpRequest_OS alloc]init];
@@ -34,18 +34,31 @@
         default:
             break;
     }
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1:8889/interface"];
-    [http synchronousRequestWithuserName:@"" requestUrl:url requestStr:requestStr completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            NSLog(@"response:%@ \n responseObject:%@", response, responseObject);
-        }
-        if ([_delegate respondsToSelector:@selector(httpInterFaceDataWithDic:error:)]) {
-            [_delegate httpInterFaceDataWithDic:responseObject error:error];
-        }
-    }];
+    NSURL *url = [NSURL URLWithString:@"http://192.168.1.27:8889/interface"];
+    [http synchronousRequestWithuserName:@""
+                              requestUrl:url
+                              requestStr:requestStr
+                       completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+
+
+                           if ([_delegate respondsToSelector:@selector(httpInterFaceDataCode:DataDic:interFaceMode:)]) {
+                               if (error ) {
+                                   NSLog(@"%@",error);
+                                   [_delegate httpInterFaceDataCode:error.code DataDic:[[NSDictionary alloc]initWithObjectsAndKeys:error.domain,@"result" ,nil] interFaceMode:[data objectForKey:@"inefaceMode"]];
+
+                               } else if(!responseObject){
+
+                                   [_delegate httpInterFaceDataCode:10001 DataDic:[[NSDictionary alloc]initWithObjectsAndKeys:@"返回数据为空",@"result" ,nil] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                               }else{
+
+                                   NSDictionary *dic =(NSDictionary*)responseObject;
+
+                                   NSLog(@"%@",dic);
+                                   [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"result"] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                               }
+
+                           }
+                       }];
 }
 /**
  * 登录
@@ -53,7 +66,7 @@
  * [in]passWord 密码
  */
 -(void)logWithUserName:(NSString *)userName passWord:(NSString*)passWord{
-    
+
     NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
                              @"log",@"inefaceMode",
                              userName,@"userName",
@@ -68,7 +81,7 @@
  * [in]passWord 密码
  */
 -(void)registerWithTelNO:(NSString*)tel passWord:(NSString*)passWord{
-    
+
     NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
                              @"register",@"inefaceMode",
                              tel,@"tel",

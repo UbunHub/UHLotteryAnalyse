@@ -11,7 +11,10 @@
 @implementation SmartHomeViewController
 
 -(void)viewDidLoad{
-
+    [super viewDidLoad];
 }
 
+-(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSDictionary *)interFaceMode{
+
+}
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HttpInterFace.h"
+#import "Global_Variable.h"
+
 @interface SmartHomeViewController : UIViewController<HttpInterFaceDelegate>
 
 @end

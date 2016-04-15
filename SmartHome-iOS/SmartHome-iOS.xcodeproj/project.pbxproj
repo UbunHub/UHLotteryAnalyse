@@ -37,6 +37,10 @@
 		2057FAAB1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
 		2057FAAC1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
 		207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 207734CD1C913BD100B5F18B /* HttpInterFace.m */; };
+		207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F12781CC0BECD009B9920 /* DeviceGroupVC.m */; };
+		207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */; };
+		207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F12811CC0FB22009B9920 /* DeviceGroupCell.m */; };
+		207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */; };
 		4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51472C9056CF3EB7CAE501D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +96,12 @@
 		2057FAA91C89341700CC65FD /* HttpRequest_OS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest_OS.m; sourceTree = "<group>"; };
 		207734CC1C913BD100B5F18B /* HttpInterFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInterFace.h; sourceTree = "<group>"; };
 		207734CD1C913BD100B5F18B /* HttpInterFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpInterFace.m; sourceTree = "<group>"; };
+		207F12771CC0BECD009B9920 /* DeviceGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroupVC.h; sourceTree = "<group>"; };
+		207F12781CC0BECD009B9920 /* DeviceGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceGroupVC.m; sourceTree = "<group>"; };
+		207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceGroupVC.xib; sourceTree = "<group>"; };
+		207F12801CC0FB22009B9920 /* DeviceGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroupCell.h; sourceTree = "<group>"; };
+		207F12811CC0FB22009B9920 /* DeviceGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceGroupCell.m; sourceTree = "<group>"; };
+		207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceGroupCell.xib; sourceTree = "<group>"; };
 		6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51472C9056CF3EB7CAE501D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +157,7 @@
 		2057FA431C8923C900CC65FD /* SmartHome-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				207F12731CC0BE50009B9920 /* ViewControll */,
 				2057FA931C8929FE00CC65FD /* Login */,
 				2057FA801C8925AE00CC65FD /* Public */,
 				2057FA7E1C89257700CC65FD /* TOOL */,
@@ -249,6 +260,19 @@
 				207734CD1C913BD100B5F18B /* HttpInterFace.m */,
 			);
 			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		207F12731CC0BE50009B9920 /* ViewControll */ = {
+			isa = PBXGroup;
+			children = (
+				207F12771CC0BECD009B9920 /* DeviceGroupVC.h */,
+				207F12781CC0BECD009B9920 /* DeviceGroupVC.m */,
+				207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */,
+				207F12801CC0FB22009B9920 /* DeviceGroupCell.h */,
+				207F12811CC0FB22009B9920 /* DeviceGroupCell.m */,
+				207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */,
+			);
+			path = ViewControll;
 			sourceTree = "<group>";
 		};
 		4BFF34FAD52DCC1621AE8C10 /* Frameworks */ = {
@@ -375,9 +399,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2057FA541C8923C900CC65FD /* LaunchScreen.storyboard in Resources */,
+				207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */,
 				2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */,
 				2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */,
 				2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */,
+				207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +479,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
+				207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */,
 				2057FA8B1C89270E00CC65FD /* NSString+NSStringCategory.m in Sources */,
+				207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */,
 				2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 				2057FA961C892A2B00CC65FD /* LoginViewController.m in Sources */,
 				2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */,

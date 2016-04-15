@@ -11,7 +11,9 @@
 
 @protocol HttpInterFaceDelegate <NSObject>
 
--(void)httpInterFaceDataWithDic:(NSDictionary*)dataDic error:(NSError*)error;
+-(void)httpInterFaceDataCode:(NSInteger)dataCode
+                     DataDic:(NSDictionary*)dataDic
+               interFaceMode:(NSDictionary*)interFaceMode;
 
 @end
 
