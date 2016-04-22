@@ -54,7 +54,12 @@
                                    NSDictionary *dic =(NSDictionary*)responseObject;
 
                                    NSLog(@"%@",dic);
-                                   [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"result"] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                                   if ([[dic objectForKey:@"inforCode"] integerValue]!=0) {
+                                       [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"inforMsg"] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                                   }else{
+                                       [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"result"] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                                   }
+
                                }
 
                            }
@@ -90,5 +95,18 @@
     [self requestWithData:testDic];
     
     
+}
+/**
+ * 获取用户的场景列表
+ * [in]userId 用户id
+ */
+-(void)getUserScenarioList:(NSString *)userId userName:(NSString*)userName{
+
+    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
+                             @"getUserScenarioList",@"inefaceMode",
+                             userId,@"userId",
+                             userName,@"userName",
+                             nil];
+    [self requestWithData:testDic];
 }
 @end

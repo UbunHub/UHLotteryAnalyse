@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
-#import "DeviceGroupVC.h"
+#import "TabBarViewController.h"
 
 @interface LoginViewController()
 
@@ -27,6 +27,7 @@
 
 
 -(void)viewDidLoad{
+
     [super viewDidLoad];
 
     _loginBtn.backgroundColor = [UIColor redColor];
@@ -38,6 +39,7 @@
     _loginBtn.layer.shadowColor =  [[UIColor colorWithRed: 255.0/255   green:255.0/255 blue:0.0/255 alpha:1 ]CGColor];//设置阴影颜色
     _loginBtn.layer.shadowOpacity = 0.5;//设置阴影的透明度
 }
+
 //登录
 - (IBAction)loginDoit:(id)sender {
     
@@ -47,7 +49,6 @@
     
     HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
     [httpInterFace logWithUserName:userName passWord:passWord];
-    
 }
 
 - (IBAction)registerDoit:(id)sender {
@@ -61,10 +62,13 @@
     if (dataCode == 0) {
 
         [Global_Variable sharedInstance].userleave = [[dataDic objectForKey:@"userLevel"]integerValue];
-        DeviceGroupVC *deviceGroupVC = [[DeviceGroupVC alloc]init];
-        UINavigationController *deviceGroupNav = [[UINavigationController alloc]initWithRootViewController:deviceGroupVC];
+        [Global_Variable sharedInstance].userId = [dataDic objectForKey:@"userId"];
+        [Global_Variable sharedInstance].userName = [dataDic objectForKey:@"userName"];
+        [Global_Variable sharedInstance].userTel = [dataDic objectForKey:@"userTel"];
+
+        TabBarViewController *tabBarViewController = [[TabBarViewController alloc]init];
         UIWindow *awindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
-        awindow.rootViewController = deviceGroupNav;
+        awindow.rootViewController = tabBarViewController;
         
     }
 }

@@ -40,4 +40,10 @@
  */
 -(void)registerWithTelNO:(NSString*)tel passWord:(NSString*)passWord;
 
+/**
+ * 获取用户的场景列表
+ * [in]userId 用户id
+ * [in]userName 用户名
+ */
+-(void)getUserScenarioList:(NSString *)userId userName:(NSString*)userName;
 @end

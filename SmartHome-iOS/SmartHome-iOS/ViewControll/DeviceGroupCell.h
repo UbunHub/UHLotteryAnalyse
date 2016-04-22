@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserScenarioListData.h"
 
 @interface DeviceGroupCell : UICollectionViewCell
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *bgimage;
+
+-(void)relodeCellWithdata:(UserScenarioListData*)data;
 @end
