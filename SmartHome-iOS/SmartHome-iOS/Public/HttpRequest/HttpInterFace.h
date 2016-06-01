@@ -13,7 +13,7 @@
 
 -(void)httpInterFaceDataCode:(NSInteger)dataCode
                      DataDic:(NSDictionary*)dataDic
-               interFaceMode:(NSDictionary*)interFaceMode;
+               interFaceMode:(NSString*)interFaceMode;
 
 @end
 

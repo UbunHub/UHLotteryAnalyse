@@ -9,5 +9,8 @@
 #ifndef DefineValue_h
 #define DefineValue_h
 
+//屏幕大小
+#define Screen_height   [[UIScreen mainScreen] bounds].size.height
+#define Screen_width    [[UIScreen mainScreen] bounds].size.width
 
 #endif /* DefineValue_h */

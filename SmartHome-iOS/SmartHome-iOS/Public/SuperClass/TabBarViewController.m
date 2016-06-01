@@ -10,6 +10,7 @@
 #import "DeviceGroupVC.h"
 #import "GoodsListVC.h"
 #import "BluetoothListVC.h"
+#import "AboutUsVC.h"
 @interface TabBarViewController ()
 
 @end
@@ -29,7 +30,11 @@
     BluetoothListVC *bluetoothListVC = [[BluetoothListVC alloc]init];
     UINavigationController *bluetoothListNav = [[UINavigationController alloc]initWithRootViewController:bluetoothListVC];
 
-    self.viewControllers = [NSArray arrayWithObjects:deviceGroupNav,goodsListNav,bluetoothListNav, nil];
+
+    AboutUsVC *aboutUsVC = [[AboutUsVC alloc]init];
+    UINavigationController *aboutUsNav = [[UINavigationController alloc]initWithRootViewController:aboutUsVC];
+
+    self.viewControllers = [NSArray arrayWithObjects:deviceGroupNav,goodsListNav,bluetoothListNav,aboutUsNav, nil];
 
     UITabBar *tabBar= self.tabBar;
 
@@ -41,6 +46,9 @@
 
     UITabBarItem *thiItem = [tabBar.items objectAtIndex:2];
     thiItem.title = @"扫描";
+
+    UITabBarItem *fourItem = [tabBar.items objectAtIndex:3];
+    fourItem.title = @"关于";
 
 }
 

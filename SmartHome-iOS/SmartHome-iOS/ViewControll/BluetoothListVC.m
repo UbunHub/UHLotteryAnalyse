@@ -14,6 +14,7 @@
 -(void)viewDidLoad{
 
     [super viewDidLoad];
+    self.navigationItem.title = @"设备扫描";
     [DeviceCenter sharedInstance].scanDidChangeBlock = ^(DeviceCenter* deviceCenter){
         [_tableView reloadData];
     };

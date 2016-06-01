@@ -35,35 +35,45 @@
             break;
     }
     NSURL *url = [NSURL URLWithString:@"http://192.168.1.27:8889/interface"];
+    DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n请求参数：%@\n---------end----------\n\n",url,requestStr );
+
     [http synchronousRequestWithuserName:@""
                               requestUrl:url
                               requestStr:requestStr
                        completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
 
+                           NSInteger dataCode;
+                           NSDictionary *dataDic;
+                           NSString *interFaceMode = [data objectForKey:@"inefaceMode"];
 
-                           if ([_delegate respondsToSelector:@selector(httpInterFaceDataCode:DataDic:interFaceMode:)]) {
-                               if (error ) {
-                                   NSLog(@"%@",error);
-                                   [_delegate httpInterFaceDataCode:error.code DataDic:[[NSDictionary alloc]initWithObjectsAndKeys:error.domain,@"result" ,nil] interFaceMode:[data objectForKey:@"inefaceMode"]];
+                           if (error ) {
 
-                               } else if(!responseObject){
+                               dataCode = error.code;
+                               dataDic = [[NSDictionary alloc]initWithObjectsAndKeys:error.domain,@"result" ,nil];
 
-                                   [_delegate httpInterFaceDataCode:10001 DataDic:[[NSDictionary alloc]initWithObjectsAndKeys:@"返回数据为空",@"result" ,nil] interFaceMode:[data objectForKey:@"inefaceMode"]];
-                               }else{
+                           } else if(!responseObject){
 
-                                   NSDictionary *dic =(NSDictionary*)responseObject;
+                               dataCode = 10001;
+                               dataDic = [[NSDictionary alloc]initWithObjectsAndKeys:@"返回数据为空",@"result" ,nil];
+                           }else{
 
-                                   NSLog(@"%@",dic);
-                                   if ([[dic objectForKey:@"inforCode"] integerValue]!=0) {
-                                       [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"inforMsg"] interFaceMode:[data objectForKey:@"inefaceMode"]];
-                                   }else{
-                                       [_delegate httpInterFaceDataCode:[[dic objectForKey:@"inforCode"] integerValue]  DataDic:[dic objectForKey:@"result"] interFaceMode:[data objectForKey:@"inefaceMode"]];
-                                   }
-
-                               }
+                               NSDictionary *dic =(NSDictionary*)responseObject;
+                               dataCode = [[dic objectForKey:@"inforCode"]integerValue];
+                               dataDic = dic;
 
                            }
+                           [self returnDelegateWithDataCode:dataCode DataDic:dataDic interFaceMode:interFaceMode];
+
                        }];
+}
+-(void)returnDelegateWithDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
+    DbgLog(@"\n-------bengin-------\n%@接口返回数据:\n返回码：%d:\n返回数据：%@:\n------end--------\n\n",interFaceMode,(int)dataCode,dataDic);
+
+    if ([_delegate respondsToSelector:@selector(httpInterFaceDataCode:DataDic:interFaceMode:)]) {
+        [_delegate httpInterFaceDataCode:dataCode
+                                 DataDic:dataDic
+                           interFaceMode:interFaceMode];
+    }
 }
 /**
  * 登录
@@ -93,8 +103,8 @@
                              passWord,@"passWord",
                              nil];
     [self requestWithData:testDic];
-    
-    
+
+
 }
 /**
  * 获取用户的场景列表

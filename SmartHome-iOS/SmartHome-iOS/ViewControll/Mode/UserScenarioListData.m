@@ -13,6 +13,7 @@
  * 将字典数组解析为UserScenarioListData类型的数组
  */
 +(NSArray*)getUserScenarioListWithArr:(NSArray*)dicArr{
+    
     NSMutableArray *returnArr = [[NSMutableArray alloc]initWithCapacity:0];
     for (NSDictionary *dic in dicArr) {
         UserScenarioListData *data = [[UserScenarioListData alloc]init];

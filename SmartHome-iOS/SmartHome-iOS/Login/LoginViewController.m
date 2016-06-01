@@ -46,7 +46,7 @@
     [self.view endEditing:YES];
     NSString *userName = _userName_tf.text;
     NSString *passWord = _password_tf.text;
-    
+    [AlertView showAlertViewWithstyle:2001 Data:nil andDelegate:self];
     HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
     [httpInterFace logWithUserName:userName passWord:passWord];
 }
@@ -57,19 +57,24 @@
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
--(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSDictionary *)interFaceMode{
-
+-(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
+    [AlertView hiddenAlertView];
     if (dataCode == 0) {
-
-        [Global_Variable sharedInstance].userleave = [[dataDic objectForKey:@"userLevel"]integerValue];
-        [Global_Variable sharedInstance].userId = [dataDic objectForKey:@"userId"];
-        [Global_Variable sharedInstance].userName = [dataDic objectForKey:@"userName"];
-        [Global_Variable sharedInstance].userTel = [dataDic objectForKey:@"userTel"];
+        NSDictionary *data = [dataDic objectForKey:@"result"];
+        [Global_Variable sharedInstance].userleave = [[data objectForKey:@"userLevel"]integerValue];
+        [Global_Variable sharedInstance].userId = [data objectForKey:@"userId"];
+        [Global_Variable sharedInstance].userName = [data objectForKey:@"userName"];
+        [Global_Variable sharedInstance].userTel = [data objectForKey:@"userTel"];
 
         TabBarViewController *tabBarViewController = [[TabBarViewController alloc]init];
         UIWindow *awindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
         awindow.rootViewController = tabBarViewController;
-        
+
+    }else{
+
+        NSString * msg = [dataDic objectForKey:@"result"];
+        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
+        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
     }
 }
 

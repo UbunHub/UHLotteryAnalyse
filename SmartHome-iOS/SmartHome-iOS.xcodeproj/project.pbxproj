@@ -50,6 +50,16 @@
 		207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */; };
 		207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F12811CC0FB22009B9920 /* DeviceGroupCell.m */; };
 		207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */; };
+		20AD69DB1CE08A65005CE2ED /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69D71CE08A65005CE2ED /* AlertView.m */; };
+		20AD69DC1CE08A65005CE2ED /* AlertView_1001.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69D91CE08A65005CE2ED /* AlertView_1001.m */; };
+		20AD69DD1CE08A65005CE2ED /* AlertView_1001.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */; };
+		20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69FD1CE0BC09005CE2ED /* RoundedUIButton.m */; };
+		20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69FF1CE0BC09005CE2ED /* TButtonWithInfo.m */; };
+		20AD6A0A1CE0E492005CE2ED /* MessageView_2002.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD6A081CE0E492005CE2ED /* MessageView_2002.m */; };
+		20AD6A0B1CE0E492005CE2ED /* MessageView_2002.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */; };
+		20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD6A0E1CE10303005CE2ED /* AboutUsVC.m */; };
+		20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */; };
+		20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20B1F1011CE5D7F6002BC58D /* WavaSever.mm */; };
 		4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51472C9056CF3EB7CAE501D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +136,26 @@
 		207F12801CC0FB22009B9920 /* DeviceGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroupCell.h; sourceTree = "<group>"; };
 		207F12811CC0FB22009B9920 /* DeviceGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceGroupCell.m; sourceTree = "<group>"; };
 		207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceGroupCell.xib; sourceTree = "<group>"; };
+		20AD69D61CE08A65005CE2ED /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		20AD69D71CE08A65005CE2ED /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		20AD69D81CE08A65005CE2ED /* AlertView_1001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView_1001.h; sourceTree = "<group>"; };
+		20AD69D91CE08A65005CE2ED /* AlertView_1001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView_1001.m; sourceTree = "<group>"; };
+		20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView_1001.xib; sourceTree = "<group>"; };
+		20AD69DF1CE096F2005CE2ED /* SmateHome.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmateHome.pch; sourceTree = "<group>"; };
+		20AD69E01CE0B974005CE2ED /* AlertViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewControllerDelegate.h; sourceTree = "<group>"; };
+		20AD69FC1CE0BC09005CE2ED /* RoundedUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedUIButton.h; sourceTree = "<group>"; };
+		20AD69FD1CE0BC09005CE2ED /* RoundedUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedUIButton.m; sourceTree = "<group>"; };
+		20AD69FE1CE0BC09005CE2ED /* TButtonWithInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TButtonWithInfo.h; sourceTree = "<group>"; };
+		20AD69FF1CE0BC09005CE2ED /* TButtonWithInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TButtonWithInfo.m; sourceTree = "<group>"; };
+		20AD6A071CE0E492005CE2ED /* MessageView_2002.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView_2002.h; sourceTree = "<group>"; };
+		20AD6A081CE0E492005CE2ED /* MessageView_2002.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView_2002.m; sourceTree = "<group>"; };
+		20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView_2002.xib; sourceTree = "<group>"; };
+		20AD6A0D1CE10303005CE2ED /* AboutUsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
+		20AD6A0E1CE10303005CE2ED /* AboutUsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsVC.m; sourceTree = "<group>"; };
+		20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
+		20AD6A121CE2D5C2005CE2ED /* Dbglog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dbglog.h; sourceTree = "<group>"; };
+		20B1F1011CE5D7F6002BC58D /* WavaSever.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavaSever.mm; sourceTree = "<group>"; };
+		20B1F1021CE5D7F6002BC58D /* WavaSever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavaSever.h; sourceTree = "<group>"; };
 		6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51472C9056CF3EB7CAE501D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,11 +211,12 @@
 		2057FA431C8923C900CC65FD /* SmartHome-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				20AD69FA1CE0BBFA005CE2ED /* TOOL */,
+				2073476E1CD8A9200045757B /* ErrorAndMessageView */,
 				2068A2391CC77F650026EC0F /* DeviceAccess */,
 				207F12731CC0BE50009B9920 /* ViewControll */,
 				2057FA931C8929FE00CC65FD /* Login */,
 				2057FA801C8925AE00CC65FD /* Public */,
-				2057FA7E1C89257700CC65FD /* TOOL */,
 				2057FA471C8923C900CC65FD /* AppDelegate.h */,
 				2057FA481C8923C900CC65FD /* AppDelegate.m */,
 				2057FA501C8923C900CC65FD /* Assets.xcassets */,
@@ -200,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2057FA451C8923C900CC65FD /* main.m */,
+				20AD69DF1CE096F2005CE2ED /* SmateHome.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -222,13 +254,6 @@
 			path = "SmartHome-iOSUITests";
 			sourceTree = "<group>";
 		};
-		2057FA7E1C89257700CC65FD /* TOOL */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TOOL;
-			sourceTree = "<group>";
-		};
 		2057FA801C8925AE00CC65FD /* Public */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +262,7 @@
 				2057FA811C8925CD00CC65FD /* SuperClass */,
 				2057FA821C89262300CC65FD /* EnumValue.h */,
 				2057FAA11C89312F00CC65FD /* DefineValue.h */,
+				20AD6A121CE2D5C2005CE2ED /* Dbglog.h */,
 				2057FA831C89267C00CC65FD /* Global_Variable.h */,
 				2057FA841C89267C00CC65FD /* Global_Variable.m */,
 			);
@@ -303,13 +329,32 @@
 			children = (
 				2068A23D1CC7835A0026EC0F /* DeviceCenter.h */,
 				2068A23E1CC7835A0026EC0F /* DeviceCenter.m */,
+				20B1F1011CE5D7F6002BC58D /* WavaSever.mm */,
+				20B1F1021CE5D7F6002BC58D /* WavaSever.h */,
 			);
 			path = DeviceAccess;
+			sourceTree = "<group>";
+		};
+		2073476E1CD8A9200045757B /* ErrorAndMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				20AD69D61CE08A65005CE2ED /* AlertView.h */,
+				20AD69D71CE08A65005CE2ED /* AlertView.m */,
+				20AD69D81CE08A65005CE2ED /* AlertView_1001.h */,
+				20AD69D91CE08A65005CE2ED /* AlertView_1001.m */,
+				20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */,
+				20AD6A071CE0E492005CE2ED /* MessageView_2002.h */,
+				20AD6A081CE0E492005CE2ED /* MessageView_2002.m */,
+				20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */,
+				20AD69E01CE0B974005CE2ED /* AlertViewControllerDelegate.h */,
+			);
+			path = ErrorAndMessageView;
 			sourceTree = "<group>";
 		};
 		207F12731CC0BE50009B9920 /* ViewControll */ = {
 			isa = PBXGroup;
 			children = (
+				20AD6A0C1CE102E5005CE2ED /* AboutUs */,
 				2068A2251CC74C5E0026EC0F /* Mode */,
 				207F12771CC0BECD009B9920 /* DeviceGroupVC.h */,
 				207F12781CC0BECD009B9920 /* DeviceGroupVC.m */,
@@ -328,6 +373,35 @@
 				2068A2431CC78AB20026EC0F /* BluetoothListVC.xib */,
 			);
 			path = ViewControll;
+			sourceTree = "<group>";
+		};
+		20AD69FA1CE0BBFA005CE2ED /* TOOL */ = {
+			isa = PBXGroup;
+			children = (
+				20AD69FB1CE0BC09005CE2ED /* UIButtonExtend */,
+			);
+			path = TOOL;
+			sourceTree = "<group>";
+		};
+		20AD69FB1CE0BC09005CE2ED /* UIButtonExtend */ = {
+			isa = PBXGroup;
+			children = (
+				20AD69FC1CE0BC09005CE2ED /* RoundedUIButton.h */,
+				20AD69FD1CE0BC09005CE2ED /* RoundedUIButton.m */,
+				20AD69FE1CE0BC09005CE2ED /* TButtonWithInfo.h */,
+				20AD69FF1CE0BC09005CE2ED /* TButtonWithInfo.m */,
+			);
+			path = UIButtonExtend;
+			sourceTree = "<group>";
+		};
+		20AD6A0C1CE102E5005CE2ED /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				20AD6A0D1CE10303005CE2ED /* AboutUsVC.h */,
+				20AD6A0E1CE10303005CE2ED /* AboutUsVC.m */,
+				20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 		4BFF34FAD52DCC1621AE8C10 /* Frameworks */ = {
@@ -459,9 +533,12 @@
 				207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */,
 				2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */,
 				2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */,
+				20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */,
 				2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */,
 				207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */,
 				2068A2441CC78AB20026EC0F /* BluetoothListVC.xib in Resources */,
+				20AD69DD1CE08A65005CE2ED /* AlertView_1001.xib in Resources */,
+				20AD6A0B1CE0E492005CE2ED /* MessageView_2002.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */,
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
 				207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */,
 				2068A22B1CC76CD10026EC0F /* TabBarViewController.m in Sources */,
@@ -543,16 +621,22 @@
 				2057FA8B1C89270E00CC65FD /* NSString+NSStringCategory.m in Sources */,
 				2068A2421CC78AA50026EC0F /* BluetoothListVC.m in Sources */,
 				2068A2481CC8B1C60026EC0F /* BluetoothDetailsVC.m in Sources */,
+				20AD69DB1CE08A65005CE2ED /* AlertView.m in Sources */,
 				207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */,
+				20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */,
+				20AD6A0A1CE0E492005CE2ED /* MessageView_2002.m in Sources */,
 				2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 				2057FA961C892A2B00CC65FD /* LoginViewController.m in Sources */,
 				2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */,
 				2068A2371CC772FF0026EC0F /* GoodsListVC.m in Sources */,
 				2057FA851C89267C00CC65FD /* Global_Variable.m in Sources */,
 				2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */,
+				20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */,
+				20AD69DC1CE08A65005CE2ED /* AlertView_1001.m in Sources */,
 				2057FA461C8923C900CC65FD /* main.m in Sources */,
 				2057FA901C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
 				2068A23F1CC7835A0026EC0F /* DeviceCenter.m in Sources */,
+				20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */,
 				207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,10 +781,14 @@
 			baseConfigurationReference = 1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "/Users/xiaoqy/Documents/iOS/SmartHome-iOS/SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -709,10 +797,13 @@
 			baseConfigurationReference = 6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "/Users/xiaoqy/Documents/iOS/SmartHome-iOS/SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
