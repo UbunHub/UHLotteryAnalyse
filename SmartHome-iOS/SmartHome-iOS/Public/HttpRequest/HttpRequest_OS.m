@@ -21,6 +21,7 @@
                     completionHandler:(nullable void (^)(NSURLResponse *, id _Nullable, NSError * _Nullable))completionHandler{
 
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    [configuration setTimeoutIntervalForRequest:15.0];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:requestUrl];

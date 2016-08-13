@@ -20,4 +20,5 @@
                            requestUrl:(NSURL*)requestUrl
                            requestStr:(NSString*)requestStr
                     completionHandler:(nullable void (^)(NSURLResponse *, id _Nullable, NSError * _Nullable))completionHandler;
+
 @end

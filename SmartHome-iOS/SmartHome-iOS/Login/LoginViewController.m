@@ -9,7 +9,8 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 #import "TabBarViewController.h"
-
+#import "HttpDownloadManager.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface LoginViewController()
 
 //用户名输入框
@@ -46,9 +47,19 @@
     [self.view endEditing:YES];
     NSString *userName = _userName_tf.text;
     NSString *passWord = _password_tf.text;
-    [AlertView showAlertViewWithstyle:2001 Data:nil andDelegate:self];
-    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace logWithUserName:userName passWord:passWord];
+    //////
+//    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+//    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://shop.img.3weidu.com/life/5578994d-e749-4bf3-9dbf-a21a460cc201.gif"] placeholderImage:nil options:nil];
+//
+    [[HttpDownloadManager sharedManager] downloadImageWithURL:[NSURL URLWithString:@"http://shop.img.3weidu.com/life/1c8cd898-bc40-48f5-a976-95c00cc4846c.gif"] options:HttpDownLoadRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        
+    } completed:^(NSData *data, NSError *error, DataCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        DbgLog(@"");
+    }];
+    //////
+//    [AlertView showAlertViewWithstyle:2001 Data:nil andDelegate:self];
+//    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
+//    [httpInterFace logWithUserName:userName passWord:passWord];
 }
 
 - (IBAction)registerDoit:(id)sender {

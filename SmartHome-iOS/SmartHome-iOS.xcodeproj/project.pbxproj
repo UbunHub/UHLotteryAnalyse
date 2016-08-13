@@ -10,6 +10,10 @@
 		2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
 		2036D6EB1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
 		2036D6EC1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
+		2039D2AC1D34D7C200E0EA55 /* HttpDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039D2AB1D34D7C200E0EA55 /* HttpDownloadManager.m */; };
+		2039D2B21D34DB2C00E0EA55 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039D2B11D34DB2C00E0EA55 /* DataCache.m */; };
+		2039D2B61D34E3EB00E0EA55 /* DataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039D2B51D34E3EB00E0EA55 /* DataDownloader.m */; };
+		2039D2B91D34E91D00E0EA55 /* DataDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2039D2B81D34E91D00E0EA55 /* DataDownloaderOperation.m */; };
 		2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047BFF71C91125F006E418E /* RegisterViewController.m */; };
 		2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2047BFF81C91125F006E418E /* RegisterViewController.xib */; };
 		2057FA461C8923C900CC65FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FA451C8923C900CC65FD /* main.m */; };
@@ -84,6 +88,16 @@
 		1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2036D6E81C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSDictionaryCategory.h"; sourceTree = "<group>"; };
 		2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSDictionaryCategory.m"; sourceTree = "<group>"; };
+		2039D2AA1D34D7C200E0EA55 /* HttpDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownloadManager.h; sourceTree = "<group>"; };
+		2039D2AB1D34D7C200E0EA55 /* HttpDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDownloadManager.m; sourceTree = "<group>"; };
+		2039D2B01D34DB2C00E0EA55 /* DataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
+		2039D2B11D34DB2C00E0EA55 /* DataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
+		2039D2B31D34DE2500E0EA55 /* HttpDownloaderCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpDownloaderCompat.h; sourceTree = "<group>"; };
+		2039D2B41D34E3EB00E0EA55 /* DataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDownloader.h; sourceTree = "<group>"; };
+		2039D2B51D34E3EB00E0EA55 /* DataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataDownloader.m; sourceTree = "<group>"; };
+		2039D2B71D34E91D00E0EA55 /* DataDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataDownloaderOperation.h; sourceTree = "<group>"; };
+		2039D2B81D34E91D00E0EA55 /* DataDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataDownloaderOperation.m; sourceTree = "<group>"; };
+		2039D2BA1D34F40500E0EA55 /* DataOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataOperation.h; sourceTree = "<group>"; };
 		2047BFF61C91125F006E418E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		2047BFF71C91125F006E418E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		2047BFF81C91125F006E418E /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +200,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2039D2A21D34D2B900E0EA55 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				2039D2A61D34D2F200E0EA55 /* HttpDownLoad */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		2039D2A61D34D2F200E0EA55 /* HttpDownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				2039D2BA1D34F40500E0EA55 /* DataOperation.h */,
+				2039D2AA1D34D7C200E0EA55 /* HttpDownloadManager.h */,
+				2039D2AB1D34D7C200E0EA55 /* HttpDownloadManager.m */,
+				2039D2B01D34DB2C00E0EA55 /* DataCache.h */,
+				2039D2B11D34DB2C00E0EA55 /* DataCache.m */,
+				2039D2B31D34DE2500E0EA55 /* HttpDownloaderCompat.h */,
+				2039D2B41D34E3EB00E0EA55 /* DataDownloader.h */,
+				2039D2B51D34E3EB00E0EA55 /* DataDownloader.m */,
+				2039D2B71D34E91D00E0EA55 /* DataDownloaderOperation.h */,
+				2039D2B81D34E91D00E0EA55 /* DataDownloaderOperation.m */,
+			);
+			path = HttpDownLoad;
+			sourceTree = "<group>";
+		};
 		2057FA381C8923C900CC65FD = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +296,7 @@
 		2057FA801C8925AE00CC65FD /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2039D2A21D34D2B900E0EA55 /* Downloader */,
 				2057FAA71C89340B00CC65FD /* HttpRequest */,
 				2057FA881C8926E900CC65FD /* Category */,
 				2057FA811C8925CD00CC65FD /* SuperClass */,
@@ -614,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */,
+				2039D2B61D34E3EB00E0EA55 /* DataDownloader.m in Sources */,
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
 				207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */,
 				2068A22B1CC76CD10026EC0F /* TabBarViewController.m in Sources */,
@@ -621,6 +662,7 @@
 				2057FA8B1C89270E00CC65FD /* NSString+NSStringCategory.m in Sources */,
 				2068A2421CC78AA50026EC0F /* BluetoothListVC.m in Sources */,
 				2068A2481CC8B1C60026EC0F /* BluetoothDetailsVC.m in Sources */,
+				2039D2B21D34DB2C00E0EA55 /* DataCache.m in Sources */,
 				20AD69DB1CE08A65005CE2ED /* AlertView.m in Sources */,
 				207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */,
 				20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */,
@@ -633,11 +675,13 @@
 				2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */,
 				20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */,
 				20AD69DC1CE08A65005CE2ED /* AlertView_1001.m in Sources */,
+				2039D2B91D34E91D00E0EA55 /* DataDownloaderOperation.m in Sources */,
 				2057FA461C8923C900CC65FD /* main.m in Sources */,
 				2057FA901C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
 				2068A23F1CC7835A0026EC0F /* DeviceCenter.m in Sources */,
 				20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */,
 				207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */,
+				2039D2AC1D34D7C200E0EA55 /* HttpDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,11 +826,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = "/Users/xiaoqy/Documents/iOS/SmartHome-iOS/SmartHome-iOS/SmateHome.pch";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOS";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TDDPayBLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -798,11 +847,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = "/Users/xiaoqy/Documents/iOS/SmartHome-iOS/SmartHome-iOS/SmateHome.pch";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOS";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TDDPayBLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
 			};
 			name = Release;
@@ -834,6 +888,8 @@
 		2057FA751C8923C900CC65FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "SmartHome-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOSUITests";
@@ -846,6 +902,8 @@
 		2057FA761C8923C900CC65FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "SmartHome-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sanweidu.TDDPayBLE.SmartHome-iOSUITests";
