@@ -20,7 +20,7 @@
     return self;
 }
 
--(void)requestWithData:(NSDictionary*)data{
+-(void)requestWithData:(NSDictionary*)data interPath:(NSString*)interPath{
 
     NSString *requestStr;
     _inputDataType = (_inputDataType)?_inputDataType:DATATYPE_INPUT_JSON;
@@ -34,7 +34,9 @@
         default:
             break;
     }
-    NSURL *url = [NSURL URLWithString:@"http://192.168.1.27:8889/interface"];
+//    NSString *urlStr = [NSString stringWithFormat:@"http://45.78.9.162:8889/%@",interPath];
+    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.1.27:8889/%@",interPath];
+    NSURL *url = [NSURL URLWithString:urlStr];
     DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n请求参数：%@\n---------end----------\n\n",url,requestStr );
 
     [http synchronousRequestWithuserName:@""
@@ -87,7 +89,7 @@
                              userName,@"userName",
                              passWord,@"passWord",
                              nil];
-    [self requestWithData:testDic];
+    [self requestWithData:testDic interPath:@"interface"];
 }
 
 /**
@@ -102,7 +104,7 @@
                              tel,@"tel",
                              passWord,@"passWord",
                              nil];
-    [self requestWithData:testDic];
+    [self requestWithData:testDic interPath:@"interface"];
 
 
 }
@@ -117,6 +119,38 @@
                              userId,@"userId",
                              userName,@"userName",
                              nil];
-    [self requestWithData:testDic];
+    [self requestWithData:testDic interPath:@"interface"];
+}
+
+/**
+ * 获取彩票数据
+ */
+-(void)getFC3dDataWithPageSize:(NSString*)pageSize PageNum:(NSString*)pageNum{
+    
+    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
+                             @"getFC3DData",@"inefaceMode",
+                             pageSize,@"pageSize",
+                             pageNum,@"pageNum",
+                             nil];
+    [self requestWithData:testDic interPath:@"FCAnalyse"];
+}
+
+/**
+ *获取推荐的号码
+ */
+-(void)getRecommendCodeWithBeginOutNO:(NSString*)beginOutNO
+                             EndOutNO:(NSString*)endOutNO
+                          Probability:(NSString*)probability
+                       RecommendOutON:(NSString*)recommendOutON{
+    
+    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
+                             @"getRecommendCode",@"inefaceMode",
+                             beginOutNO,@"BeginOutNO",
+                             endOutNO,@"EndOutNO",
+                             probability,@"Probability",
+                             recommendOutON,@"RecommendOutON",
+                             nil];
+    [self requestWithData:testDic interPath:@"FCAnalyse"];
+    
 }
 @end

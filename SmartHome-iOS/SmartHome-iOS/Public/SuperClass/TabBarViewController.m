@@ -11,6 +11,7 @@
 #import "GoodsListVC.h"
 #import "BluetoothListVC.h"
 #import "AboutUsVC.h"
+#import "FCShowDataVC.h"
 @interface TabBarViewController ()
 
 @end
@@ -23,7 +24,7 @@
     DeviceGroupVC *deviceGroupVC = [[DeviceGroupVC alloc]init];
     UINavigationController *deviceGroupNav = [[UINavigationController alloc]initWithRootViewController:deviceGroupVC];
 
-    GoodsListVC *goodsListVC = [[GoodsListVC alloc]init];
+    FCShowDataVC *goodsListVC = [[FCShowDataVC alloc]init];
     UINavigationController *goodsListNav = [[UINavigationController alloc]initWithRootViewController:goodsListVC];
 
 
@@ -42,7 +43,7 @@
     firstItem.title = @"HOME";
 
     UITabBarItem *secItem = [tabBar.items objectAtIndex:1];
-    secItem.title = @"购买";
+    secItem.title = @"彩票";
 
     UITabBarItem *thiItem = [tabBar.items objectAtIndex:2];
     thiItem.title = @"扫描";

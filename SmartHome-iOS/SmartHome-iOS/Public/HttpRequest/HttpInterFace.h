@@ -46,4 +46,18 @@
  * [in]userName 用户名
  */
 -(void)getUserScenarioList:(NSString *)userId userName:(NSString*)userName;
+
+/**
+ * 获取彩票数据
+ */
+-(void)getFC3dDataWithPageSize:(NSString*)pageSize PageNum:(NSString*)pageNum;
+
+/**
+ *获取推荐的号码
+ */
+-(void)getRecommendCodeWithBeginOutNO:(NSString*)beginOutNO
+                             EndOutNO:(NSString*)endOutNO
+                          Probability:(NSString*)probability
+                       RecommendOutON:(NSString*)recommendOutON;
+
 @end
