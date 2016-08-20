@@ -9,5 +9,5 @@
 #import "SmartHomeViewController.h"
 
 @interface RecommendList : SmartHomeViewController
-
+@property(strong, nonatomic)NSString* recommendOutON;
 @end

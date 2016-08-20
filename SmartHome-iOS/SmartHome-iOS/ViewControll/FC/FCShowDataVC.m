@@ -63,8 +63,9 @@ static BOOL isHttping;
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+     NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
     RecommendList*recommendList = [[RecommendList alloc]init];
+    recommendList.recommendOutON =dicdata[@"outNO"];
     [self.navigationController pushViewController:recommendList animated:YES];
 }
 

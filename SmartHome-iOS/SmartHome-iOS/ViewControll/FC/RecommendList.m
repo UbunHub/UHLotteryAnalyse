@@ -47,8 +47,10 @@
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    NSString *str = [_dataArr objectAtIndex:indexPath.row];
     RecommendInfoVC*recommendInfoVC = [[RecommendInfoVC alloc]init];
+    recommendInfoVC.recommendOutON = _recommendOutON;
+    recommendInfoVC.probability = str;
     [self.navigationController pushViewController:recommendInfoVC animated:YES];
 }
 
