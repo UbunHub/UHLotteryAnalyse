@@ -21,7 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"3D历史";
+    UIBarButtonItem * todatBar = [[UIBarButtonItem alloc]initWithTitle:@"今日预测" style:UIBarButtonItemStylePlain target:self action:@selector(showTodayData)];
+    self.navigationItem.rightBarButtonItem = todatBar;
    
+}
+
+- (void)showTodayData{
+    
+    NSLog(@"点击了");
+
 }
 -(void)viewWillAppear:(BOOL)animated{
      [self getHttpData];

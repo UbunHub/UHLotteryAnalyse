@@ -34,8 +34,8 @@
         default:
             break;
     }
-//    NSString *urlStr = [NSString stringWithFormat:@"http://45.78.9.162:8889/%@",interPath];
-    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.1.27:8889/%@",interPath];
+    NSString *urlStr = [NSString stringWithFormat:@"http://45.78.9.162:8889/%@",interPath];
+//    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.1.27:8889/%@",interPath];
     NSURL *url = [NSURL URLWithString:urlStr];
     DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n请求参数：%@\n---------end----------\n\n",url,requestStr );
 
