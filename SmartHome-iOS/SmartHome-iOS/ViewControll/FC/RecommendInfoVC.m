@@ -29,7 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *baiOutCode_lab;
 @end
 
-
+//福建卡萨倒海翻江可视电话附近考虑的是 v
 @implementation RecommendInfoVC
 
 - (void)viewDidLoad {
