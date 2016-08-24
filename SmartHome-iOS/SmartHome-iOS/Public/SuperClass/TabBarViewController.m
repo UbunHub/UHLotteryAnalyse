@@ -24,8 +24,8 @@
     DeviceGroupVC *deviceGroupVC = [[DeviceGroupVC alloc]init];
     UINavigationController *deviceGroupNav = [[UINavigationController alloc]initWithRootViewController:deviceGroupVC];
 
-    FCShowDataVC *goodsListVC = [[FCShowDataVC alloc]init];
-    UINavigationController *goodsListNav = [[UINavigationController alloc]initWithRootViewController:goodsListVC];
+    FCShowDataVC *fcShowDataVC = [[FCShowDataVC alloc]init];
+    UINavigationController *fcShowDataNav = [[UINavigationController alloc]initWithRootViewController:fcShowDataVC];
 
 
     BluetoothListVC *bluetoothListVC = [[BluetoothListVC alloc]init];
@@ -35,15 +35,15 @@
     AboutUsVC *aboutUsVC = [[AboutUsVC alloc]init];
     UINavigationController *aboutUsNav = [[UINavigationController alloc]initWithRootViewController:aboutUsVC];
 
-    self.viewControllers = [NSArray arrayWithObjects:deviceGroupNav,goodsListNav,bluetoothListNav,aboutUsNav, nil];
+    self.viewControllers = [NSArray arrayWithObjects:fcShowDataNav,deviceGroupNav,bluetoothListNav,aboutUsNav, nil];
 
     UITabBar *tabBar= self.tabBar;
 
     UITabBarItem *firstItem = [tabBar.items objectAtIndex:0];
-    firstItem.title = @"HOME";
+    firstItem.title = @"彩票";
 
     UITabBarItem *secItem = [tabBar.items objectAtIndex:1];
-    secItem.title = @"彩票";
+    secItem.title = @"Smart";
 
     UITabBarItem *thiItem = [tabBar.items objectAtIndex:2];
     thiItem.title = @"扫描";

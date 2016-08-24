@@ -11,5 +11,4 @@
 @interface RecommendInfoVC : SmartHomeViewController
 
 @property(strong, nonatomic)NSString *recommendOutON;//要预测的NO
-@property(strong, nonatomic)NSString *probability;//频率
 @end

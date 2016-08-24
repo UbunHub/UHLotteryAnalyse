@@ -8,7 +8,7 @@
 
 #import "FCShowDataVC.h"
 #import "FCShowDataCell.h"
-#import "RecommendList.h"
+#import "RecommendInfoVC.h"
 @interface FCShowDataVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 
@@ -28,7 +28,11 @@
 
 - (void)showTodayData{
     
-    NSLog(@"点击了");
+    NSDictionary *dicdata = [dataArr firstObject];
+    RecommendInfoVC*recommendList = [[RecommendInfoVC alloc]init];
+    NSInteger outNO = [dicdata[@"outNO"] intValue]+1;
+    recommendList.recommendOutON = [NSString stringWithFormat:@"%d",(int)(outNO+1)];
+    [self.navigationController pushViewController:recommendList animated:YES];
 
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -72,7 +76,7 @@ static BOOL isHttping;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
      NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
-    RecommendList*recommendList = [[RecommendList alloc]init];
+    RecommendInfoVC*recommendList = [[RecommendInfoVC alloc]init];
     recommendList.recommendOutON =dicdata[@"outNO"];
     [self.navigationController pushViewController:recommendList animated:YES];
 }

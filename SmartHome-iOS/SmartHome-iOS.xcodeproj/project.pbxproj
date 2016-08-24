@@ -11,8 +11,6 @@
 		201330931D657D4400943C0D /* FCShowDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330911D657D4400943C0D /* FCShowDataVC.xib */; };
 		201330971D658DC300943C0D /* FCShowDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 201330951D658DC300943C0D /* FCShowDataCell.m */; };
 		201330981D658DC300943C0D /* FCShowDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330961D658DC300943C0D /* FCShowDataCell.xib */; };
-		2013309C1D6726A800943C0D /* RecommendList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2013309A1D6726A800943C0D /* RecommendList.m */; };
-		2013309D1D6726A900943C0D /* RecommendList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2013309B1D6726A800943C0D /* RecommendList.xib */; };
 		201330A41D6729C000943C0D /* RecommendInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201330A21D6729C000943C0D /* RecommendInfoVC.m */; };
 		201330A51D6729C000943C0D /* RecommendInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330A31D6729C000943C0D /* RecommendInfoVC.xib */; };
 		2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
@@ -100,9 +98,6 @@
 		201330941D658DC300943C0D /* FCShowDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShowDataCell.h; sourceTree = "<group>"; };
 		201330951D658DC300943C0D /* FCShowDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShowDataCell.m; sourceTree = "<group>"; };
 		201330961D658DC300943C0D /* FCShowDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCShowDataCell.xib; sourceTree = "<group>"; };
-		201330991D6726A800943C0D /* RecommendList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendList.h; sourceTree = "<group>"; };
-		2013309A1D6726A800943C0D /* RecommendList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendList.m; sourceTree = "<group>"; };
-		2013309B1D6726A800943C0D /* RecommendList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendList.xib; sourceTree = "<group>"; };
 		201330A11D6729C000943C0D /* RecommendInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendInfoVC.h; sourceTree = "<group>"; };
 		201330A21D6729C000943C0D /* RecommendInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendInfoVC.m; sourceTree = "<group>"; };
 		201330A31D6729C000943C0D /* RecommendInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendInfoVC.xib; sourceTree = "<group>"; };
@@ -229,9 +224,6 @@
 				201330941D658DC300943C0D /* FCShowDataCell.h */,
 				201330951D658DC300943C0D /* FCShowDataCell.m */,
 				201330961D658DC300943C0D /* FCShowDataCell.xib */,
-				201330991D6726A800943C0D /* RecommendList.h */,
-				2013309A1D6726A800943C0D /* RecommendList.m */,
-				2013309B1D6726A800943C0D /* RecommendList.xib */,
 				201330A11D6729C000943C0D /* RecommendInfoVC.h */,
 				201330A21D6729C000943C0D /* RecommendInfoVC.m */,
 				201330A31D6729C000943C0D /* RecommendInfoVC.xib */,
@@ -609,7 +601,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2068A2381CC772FF0026EC0F /* GoodsListVC.xib in Resources */,
-				2013309D1D6726A900943C0D /* RecommendList.xib in Resources */,
 				2057FA541C8923C900CC65FD /* LaunchScreen.storyboard in Resources */,
 				201330A51D6729C000943C0D /* RecommendInfoVC.xib in Resources */,
 				2068A2491CC8B1C60026EC0F /* BluetoothDetailsVC.xib in Resources */,
@@ -698,7 +689,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2013309C1D6726A800943C0D /* RecommendList.m in Sources */,
 				20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */,
 				2039D2B61D34E3EB00E0EA55 /* DataDownloader.m in Sources */,
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
