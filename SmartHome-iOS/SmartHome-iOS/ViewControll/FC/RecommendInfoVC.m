@@ -70,6 +70,7 @@
     for (NSString *str in dataDic[@"outBaiList"]) {
         _baiRecCode_lab.text = [NSString stringWithFormat:@"%@ %@",_baiRecCode_lab.text,str];
     }
+    //just for test
     
 }
 
