@@ -79,6 +79,7 @@
     for (NSString *str in dataDic[@"outBaiList"]) {
         _baiRecCode_lab.text = [NSString stringWithFormat:@"%@ %@",_baiRecCode_lab.text,str];
     }
+    //just for test
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
