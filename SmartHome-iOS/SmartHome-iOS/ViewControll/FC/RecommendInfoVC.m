@@ -39,6 +39,8 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    _dataTableView.layer.cornerRadius = 6;
+    _dataTableView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
     self.dataArr = [[NSMutableArray alloc]initWithObjects:@"5",@"10",@"15",@"20",@"25",@"30",@"50",@"100",  nil];
     [self getHttpDataWithProbability:[_dataArr firstObject]];
 }
@@ -95,12 +97,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell==nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        
+        cell.backgroundColor = [UIColor clearColor];
+        cell.textLabel.font = [UIFont systemFontOfSize:12.0];
+        cell.textLabel.textColor = [UIColor whiteColor];
     }
     NSString *str = [_dataArr objectAtIndex:indexPath.row];
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.text = [NSString stringWithFormat:@"%@期统计",str];
-    cell.textLabel.font = [UIFont systemFontOfSize:12.0];
     return cell;
     
 }

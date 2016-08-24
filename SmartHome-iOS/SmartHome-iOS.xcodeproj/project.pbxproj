@@ -872,7 +872,7 @@
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TDDPayBLE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TddPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
@@ -893,7 +893,7 @@
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TDDPayBLE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TddPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
