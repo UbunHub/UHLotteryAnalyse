@@ -1,10 +1,4 @@
+*.DS_Store
 
-SmartHome-iOS/.DS_Store
 
-.DS_Store
-
-SmartHome-iOS/.DS_Store
-
-SmartHome-iOS/.DS_Store
-
-SmartHome-iOS/.DS_Store
+*.xcuserstate
