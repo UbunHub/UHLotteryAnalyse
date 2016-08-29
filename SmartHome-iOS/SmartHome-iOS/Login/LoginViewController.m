@@ -11,6 +11,7 @@
 #import "TabBarViewController.h"
 #import "HttpDownloadManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 @interface LoginViewController()
 
 //用户名输入框
@@ -54,12 +55,13 @@
 }
 
 - (IBAction)registerDoit:(id)sender {
-    
+
     RegisterViewController* registerViewController = [[RegisterViewController alloc]init];
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
 -(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
+    
     [AlertView hiddenAlertView];
     if (dataCode == 0) {
         NSDictionary *data = [dataDic objectForKey:@"result"];

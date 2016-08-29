@@ -113,6 +113,7 @@
     NSArray *outNotGeList = dataDic[@"outNotGeList"];
     NSArray *outNotShiList = dataDic[@"outNotShiList"];
     NSArray *outNotBaiList = dataDic[@"outNotBaiList"];
+    
     _zhiRecMoneLab.text =[NSString stringWithFormat:@"%d元",(int)(2*outGeList.count*outShiList.count*outBaiList.count)];
     _zhiKillMoneLab.text =[NSString stringWithFormat:@"%d元",(int)(2*(10-outNotGeList.count)*(10-outNotShiList.count)*(10-outNotBaiList.count))];
   

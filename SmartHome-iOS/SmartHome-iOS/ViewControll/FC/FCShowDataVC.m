@@ -9,7 +9,9 @@
 #import "FCShowDataVC.h"
 #import "FCShowDataCell.h"
 #import "RecommendInfoVC.h"
+
 @interface FCShowDataVC ()<UITableViewDelegate,UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *dataTableView;
 
 @end
@@ -19,11 +21,11 @@
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.navigationItem.title = @"3D历史";
     UIBarButtonItem * todatBar = [[UIBarButtonItem alloc]initWithTitle:@"今日预测" style:UIBarButtonItemStylePlain target:self action:@selector(showTodayData)];
     self.navigationItem.rightBarButtonItem = todatBar;
-   
 }
 
 - (void)showTodayData{
@@ -54,9 +56,11 @@ static BOOL isHttping;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     return 69.0;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
     return dataArr.count;
 }
 
@@ -66,7 +70,6 @@ static BOOL isHttping;
     FCShowDataCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell==nil) {
         cell = [[FCShowDataCell alloc] init];
-        
     }
     NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
     [cell setUIWithData:dicdata];
@@ -75,6 +78,7 @@ static BOOL isHttping;
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
      NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
     RecommendInfoVC*recommendList = [[RecommendInfoVC alloc]init];
     recommendList.recommendOutON =dicdata[@"outNO"];
@@ -96,6 +100,7 @@ static BOOL isHttping;
 }
 
 -(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
+    
     isHttping = NO;
     if (dataCode == 0) {
         if (!dataArr) {
@@ -103,7 +108,6 @@ static BOOL isHttping;
         }else{
             [dataArr addObjectsFromArray:[dataDic objectForKey:@"result"]];
         }
-        
         [_dataTableView reloadData];
  
     }else{
