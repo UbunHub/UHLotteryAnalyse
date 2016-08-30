@@ -35,7 +35,7 @@
             break;
     }
 //    NSString *urlStr = [NSString stringWithFormat:@"http://45.78.9.162:8889/%@",interPath];
-    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.1.27:8889/%@",interPath];
+    NSString *urlStr = [NSString stringWithFormat:@"http://192.168.1.27:8080/%@",interPath];
     NSURL *url = [NSURL URLWithString:urlStr];
     DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n请求参数：%@\n---------end----------\n\n",url,requestStr );
 
@@ -152,5 +152,21 @@
                              nil];
     [self requestWithData:testDic interPath:@"FCAnalyse"];
     
+}
+
+
+
+- (void)getOmitDataWithPageSize:(NSString *)pageSize
+                        pageNum:(NSString *)pageNum{
+
+    NSDictionary *testDic = [[NSDictionary alloc]initWithObjectsAndKeys:
+                             @"getOmitData",@"inefaceMode",
+                             pageSize,@"pageSize",
+                             pageNum,@"pageNum",
+                             nil];
+    [self requestWithData:testDic interPath:@"FCAnalyse"];
+
+
+
 }
 @end

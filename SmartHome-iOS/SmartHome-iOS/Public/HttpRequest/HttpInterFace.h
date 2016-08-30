@@ -60,4 +60,6 @@
                           Probability:(NSString*)probability
                        RecommendOutON:(NSString*)recommendOutON;
 
+- (void)getOmitDataWithPageSize:(NSString *)pageSize
+                        pageNum:(NSString *)pageNum;
 @end

@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FCShowDataVC">
             <connections>
-                <outlet property="dataTableView" destination="OJ4-7L-6UT" id="xkP-Lk-iti"/>
+                <outlet property="dataCollectionView" destination="wSS-9L-kLB" id="9Hq-is-QRX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,15 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="OJ4-7L-6UT">
-                    <rect key="frame" x="0.0" y="95" width="320" height="424"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="MVj-sS-Ed9"/>
-                        <outlet property="delegate" destination="-1" id="cIO-hp-mZP"/>
-                    </connections>
-                </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="j9D-bB-aMr">
                     <rect key="frame" x="0.0" y="65" width="320" height="29"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -33,12 +24,25 @@
                         <segment title="十"/>
                         <segment title="百"/>
                     </segments>
+                    <connections>
+                        <action selector="seletedValueChange:" destination="-1" eventType="valueChanged" id="Vkt-nU-2gm"/>
+                    </connections>
                 </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="wSS-9L-kLB">
+                    <rect key="frame" x="0.0" y="94" width="320" height="425"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a5O-IV-URg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
-            <point key="canvasLocation" x="763" y="372"/>
+            <point key="canvasLocation" x="756" y="370"/>
         </view>
     </objects>
 </document>

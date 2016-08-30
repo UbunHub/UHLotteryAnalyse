@@ -7,25 +7,61 @@
 //
 
 #import "FCShowDataVC.h"
-#import "FCShowDataCell.h"
+#import "FCCollectionViewCell.h"
 #import "RecommendInfoVC.h"
 
-@interface FCShowDataVC ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableView *dataTableView;
+
+@interface FCShowDataVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
+
+
+@property (weak, nonatomic) IBOutlet UICollectionView *dataCollectionView;
+
 
 @end
 
 @implementation FCShowDataVC{
     NSMutableArray *dataArr;
+    NSArray *gekeyArr;
+    NSArray *shikeyArr;
+    NSArray *baikeyArr;
+    NSArray *selectKeyArr;
 }
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    selectKeyArr = gekeyArr = [[NSArray alloc]initWithObjects:
+                @"outNO",@"Ge_Zero",@"Ge_One",@"Ge_Two",@"Ge_Three",@"Ge_Four",
+                @"Ge_Five",@"Ge_Six",@"Ge_Seven",@"Ge_Eight",@"Ge_Nine" ,nil];
+    shikeyArr = [[NSArray alloc]initWithObjects:
+                 @"outNO",@"Shi_Zero",@"Shi_One",@"Shi_Two",@"Shi_Three",@"Shi_Four",
+                 @"Shi_Five",@"Shi_Six",@"Shi_Seven",@"Shi_Eight",@"Shi_Nine" ,nil];
+    baikeyArr = [[NSArray alloc]initWithObjects:
+                 @"outNO",@"Bai_Zero",@"Bai_One",@"Bai_Two",@"Bai_Three",@"Bai_Four",
+                 @"Bai_Five",@"Bai_Six",@"Bai_Seven",@"Bai_Eight",@"Bai_Nine" ,nil];
+
     self.navigationItem.title = @"3D历史";
     UIBarButtonItem * todatBar = [[UIBarButtonItem alloc]initWithTitle:@"今日预测" style:UIBarButtonItemStylePlain target:self action:@selector(showTodayData)];
     self.navigationItem.rightBarButtonItem = todatBar;
+    _dataCollectionView.delegate   = self;
+    _dataCollectionView.dataSource = self;
+    _dataCollectionView.backgroundColor = [UIColor whiteColor];
+    //注册collectionview的cell
+    [_dataCollectionView registerClass:[FCCollectionViewCell class] forCellWithReuseIdentifier:@"FCCollectionViewCell"];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    [self getHttpData];
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.itemSize  = CGSizeMake((self.view.frame.size.width -11) /11, (self.view.frame.size.width -11) /11);
+    layout.sectionInset            = UIEdgeInsetsMake(0, 0, 1, 1);
+    layout.minimumInteritemSpacing = 0.0;
+    layout.minimumLineSpacing      = 0.0;
+    _dataCollectionView.collectionViewLayout =layout;
 }
 
 - (void)showTodayData{
@@ -35,11 +71,26 @@
     NSInteger outNO = [dicdata[@"outNO"] intValue]+1;
     recommendList.recommendOutON = [NSString stringWithFormat:@"%d",(int)(outNO+1)];
     [self.navigationController pushViewController:recommendList animated:YES];
+    
+}
+- (IBAction)seletedValueChange:(UISegmentedControl*)sender {
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            selectKeyArr = gekeyArr;
+            break;
+        case 1:
+            selectKeyArr =shikeyArr;
+            break;
+        case 2:
+            selectKeyArr =baikeyArr;
+            break;
+            
+        default:
+            break;
+    }
+    [_dataCollectionView reloadData];
+}
 
-}
--(void)viewWillAppear:(BOOL)animated{
-     [self getHttpData];
-}
 static BOOL isHttping;
 -(void)getHttpData{
     
@@ -48,52 +99,67 @@ static BOOL isHttping;
         return;
     }
     isHttping = YES;
- 
+    
     NSString* pageNumStr = [NSString stringWithFormat:@"%d",(int)pageNum];
     
     HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace getFC3dDataWithPageSize:@"10" PageNum:pageNumStr];
+    //    [httpInterFace getFC3dDataWithPageSize:@"10" PageNum:pageNumStr];
+    [httpInterFace getOmitDataWithPageSize:@"20" pageNum:pageNumStr];
+    
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    return 69.0;
-}
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return dataArr.count;
+    
+    
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return 11;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *CellIdentifier = @"FCShowDataCell";
-    FCShowDataCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell==nil) {
-        cell = [[FCShowDataCell alloc] init];
+    FCCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FCCollectionViewCell" forIndexPath:indexPath];
+    cell.layer.cornerRadius = 5;
+    NSDictionary *data = [dataArr objectAtIndex:indexPath.section];
+  
+    if (indexPath.section == 0){
+        cell.backgroundColor = [UIColor lightGrayColor];
+        cell.detailLabel.text = indexPath.row == 0?@"期数":[NSString stringWithFormat:@"%d",(int)indexPath.row -1];
+    }else{
+         cell.backgroundColor = [UIColor whiteColor];
+        NSNumber * temNum= [data objectForKey:selectKeyArr[indexPath.row]];
+        if ([temNum integerValue] == 0) {
+            
+            temNum =[NSNumber numberWithInt:indexPath.row-1];
+            cell.backgroundColor = [UIColor greenColor];
+            
+        }else{
+            cell.backgroundColor = [UIColor whiteColor];
+        }
+            
+        cell.detailLabel.text = [NSString stringWithFormat:@"%@",temNum];
     }
-    NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
-    [cell setUIWithData:dicdata];
+    
     [self setNowCount];
-    return cell;
-    
+   return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-     NSDictionary *dicdata = [dataArr objectAtIndex:indexPath.row];
-    RecommendInfoVC*recommendList = [[RecommendInfoVC alloc]init];
-    recommendList.recommendOutON =dicdata[@"outNO"];
-    [self.navigationController pushViewController:recommendList animated:YES];
-}
+
+
 
 -(void)setNowCount{
     
-    NSArray*nowShow = [_dataTableView  indexPathsForVisibleRows];
+    NSArray*nowShow = [_dataCollectionView  indexPathsForVisibleItems];
     NSInteger temCount = 0;
     
     for (NSIndexPath *index in nowShow) {
-        temCount = (index.row>temCount)?index.row:temCount;
+        temCount = (index.section>temCount)?index.section:temCount;
     }
-    if (temCount>(dataArr.count-5)) {
+    if (temCount>(dataArr.count-2)) {
         
         [self getHttpData];
     }
@@ -108,8 +174,9 @@ static BOOL isHttping;
         }else{
             [dataArr addObjectsFromArray:[dataDic objectForKey:@"result"]];
         }
-        [_dataTableView reloadData];
- 
+        
+        [_dataCollectionView reloadData];
+        
     }else{
         
         NSString * msg = [dataDic objectForKey:@"result"];
@@ -118,6 +185,14 @@ static BOOL isHttping;
     }
 }
 
+////根据原数据解析
+//- (NSArray *)analysisDataWithSourceDictionary:(NSDictionary *)sourceDictionary{
+//
+//
+//
+//
+//
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

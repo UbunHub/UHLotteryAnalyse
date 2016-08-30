@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		201330921D657D4400943C0D /* FCShowDataVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201330901D657D4400943C0D /* FCShowDataVC.m */; };
 		201330931D657D4400943C0D /* FCShowDataVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330911D657D4400943C0D /* FCShowDataVC.xib */; };
-		201330971D658DC300943C0D /* FCShowDataCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 201330951D658DC300943C0D /* FCShowDataCell.m */; };
-		201330981D658DC300943C0D /* FCShowDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330961D658DC300943C0D /* FCShowDataCell.xib */; };
 		201330A41D6729C000943C0D /* RecommendInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201330A21D6729C000943C0D /* RecommendInfoVC.m */; };
 		201330A51D6729C000943C0D /* RecommendInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201330A31D6729C000943C0D /* RecommendInfoVC.xib */; };
 		2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2036D6E91C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m */; };
@@ -71,6 +69,8 @@
 		20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */; };
 		20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20B1F1011CE5D7F6002BC58D /* WavaSever.mm */; };
 		4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51472C9056CF3EB7CAE501D /* libPods.a */; };
+		6590DB841D75282A005CB613 /* FCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590DB821D75282A005CB613 /* FCCollectionViewCell.m */; };
+		6590DB851D75282A005CB613 /* FCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6590DB831D75282A005CB613 /* FCCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +95,6 @@
 		2013308F1D657D4400943C0D /* FCShowDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShowDataVC.h; sourceTree = "<group>"; };
 		201330901D657D4400943C0D /* FCShowDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShowDataVC.m; sourceTree = "<group>"; };
 		201330911D657D4400943C0D /* FCShowDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCShowDataVC.xib; sourceTree = "<group>"; };
-		201330941D658DC300943C0D /* FCShowDataCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShowDataCell.h; sourceTree = "<group>"; };
-		201330951D658DC300943C0D /* FCShowDataCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShowDataCell.m; sourceTree = "<group>"; };
-		201330961D658DC300943C0D /* FCShowDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCShowDataCell.xib; sourceTree = "<group>"; };
 		201330A11D6729C000943C0D /* RecommendInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendInfoVC.h; sourceTree = "<group>"; };
 		201330A21D6729C000943C0D /* RecommendInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendInfoVC.m; sourceTree = "<group>"; };
 		201330A31D6729C000943C0D /* RecommendInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendInfoVC.xib; sourceTree = "<group>"; };
@@ -185,6 +182,9 @@
 		20AD6A121CE2D5C2005CE2ED /* Dbglog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dbglog.h; sourceTree = "<group>"; };
 		20B1F1011CE5D7F6002BC58D /* WavaSever.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavaSever.mm; sourceTree = "<group>"; };
 		20B1F1021CE5D7F6002BC58D /* WavaSever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavaSever.h; sourceTree = "<group>"; };
+		6590DB811D75282A005CB613 /* FCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCollectionViewCell.h; sourceTree = "<group>"; };
+		6590DB821D75282A005CB613 /* FCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCollectionViewCell.m; sourceTree = "<group>"; };
+		6590DB831D75282A005CB613 /* FCCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCCollectionViewCell.xib; sourceTree = "<group>"; };
 		6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51472C9056CF3EB7CAE501D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -221,12 +221,12 @@
 				2013308F1D657D4400943C0D /* FCShowDataVC.h */,
 				201330901D657D4400943C0D /* FCShowDataVC.m */,
 				201330911D657D4400943C0D /* FCShowDataVC.xib */,
-				201330941D658DC300943C0D /* FCShowDataCell.h */,
-				201330951D658DC300943C0D /* FCShowDataCell.m */,
-				201330961D658DC300943C0D /* FCShowDataCell.xib */,
 				201330A11D6729C000943C0D /* RecommendInfoVC.h */,
 				201330A21D6729C000943C0D /* RecommendInfoVC.m */,
 				201330A31D6729C000943C0D /* RecommendInfoVC.xib */,
+				6590DB811D75282A005CB613 /* FCCollectionViewCell.h */,
+				6590DB821D75282A005CB613 /* FCCollectionViewCell.m */,
+				6590DB831D75282A005CB613 /* FCCollectionViewCell.xib */,
 			);
 			path = FC;
 			sourceTree = "<group>";
@@ -607,8 +607,8 @@
 				207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */,
 				2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */,
 				201330931D657D4400943C0D /* FCShowDataVC.xib in Resources */,
+				6590DB851D75282A005CB613 /* FCCollectionViewCell.xib in Resources */,
 				2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */,
-				201330981D658DC300943C0D /* FCShowDataCell.xib in Resources */,
 				20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */,
 				2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */,
 				207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */,
@@ -690,6 +690,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */,
+				6590DB841D75282A005CB613 /* FCCollectionViewCell.m in Sources */,
 				2039D2B61D34E3EB00E0EA55 /* DataDownloader.m in Sources */,
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
 				207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */,
@@ -717,7 +718,6 @@
 				2057FA461C8923C900CC65FD /* main.m in Sources */,
 				2057FA901C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
 				2068A23F1CC7835A0026EC0F /* DeviceCenter.m in Sources */,
-				201330971D658DC300943C0D /* FCShowDataCell.m in Sources */,
 				20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */,
 				207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */,
 				2039D2AC1D34D7C200E0EA55 /* HttpDownloadManager.m in Sources */,
