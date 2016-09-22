@@ -135,7 +135,7 @@ static BOOL isHttping;
         NSNumber * temNum= [data objectForKey:selectKeyArr[indexPath.row]];
         if ([temNum integerValue] == 0) {
             
-            temNum =[NSNumber numberWithInt:indexPath.row-1];
+            temNum =[NSNumber numberWithInt:(int)(indexPath.row-1)];
             cell.backgroundColor = [UIColor greenColor];
             
         }else{
