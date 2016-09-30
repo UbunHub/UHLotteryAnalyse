@@ -876,7 +876,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TddPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "35ba5ba5-451d-468d-ace6-34359bab977d";
+				PROVISIONING_PROFILE_SPECIFIER = tddpay;
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -897,7 +898,8 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanweidu.TddPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "35ba5ba5-451d-468d-ace6-34359bab977d";
+				PROVISIONING_PROFILE_SPECIFIER = tddpay;
 				SWIFT_OBJC_BRIDGING_HEADER = "SmartHome-iOS/ErrorAndMessageView/SmartHome-iOS-Bridging-Header.h";
 			};
 			name = Release;
