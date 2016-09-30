@@ -32,13 +32,13 @@
     
     [super viewDidLoad];
     selectKeyArr = gekeyArr = [[NSArray alloc]initWithObjects:
-                @"outNO",@"Ge_Zero",@"Ge_One",@"Ge_Two",@"Ge_Three",@"Ge_Four",
+                @"outdate",@"Ge_Zero",@"Ge_One",@"Ge_Two",@"Ge_Three",@"Ge_Four",
                 @"Ge_Five",@"Ge_Six",@"Ge_Seven",@"Ge_Eight",@"Ge_Nine" ,nil];
     shikeyArr = [[NSArray alloc]initWithObjects:
-                 @"outNO",@"Shi_Zero",@"Shi_One",@"Shi_Two",@"Shi_Three",@"Shi_Four",
+                 @"outdate",@"Shi_Zero",@"Shi_One",@"Shi_Two",@"Shi_Three",@"Shi_Four",
                  @"Shi_Five",@"Shi_Six",@"Shi_Seven",@"Shi_Eight",@"Shi_Nine" ,nil];
     baikeyArr = [[NSArray alloc]initWithObjects:
-                 @"outNO",@"Bai_Zero",@"Bai_One",@"Bai_Two",@"Bai_Three",@"Bai_Four",
+                 @"outdate",@"Bai_Zero",@"Bai_One",@"Bai_Two",@"Bai_Three",@"Bai_Four",
                  @"Bai_Five",@"Bai_Six",@"Bai_Seven",@"Bai_Eight",@"Bai_Nine" ,nil];
 
     self.navigationItem.title = @"3D历史";
@@ -103,7 +103,6 @@ static BOOL isHttping;
     NSString* pageNumStr = [NSString stringWithFormat:@"%d",(int)pageNum];
     
     HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    //    [httpInterFace getFC3dDataWithPageSize:@"10" PageNum:pageNumStr];
     [httpInterFace getOmitDataWithPageSize:@"20" pageNum:pageNumStr];
     
 }
@@ -124,22 +123,24 @@ static BOOL isHttping;
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     FCCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FCCollectionViewCell" forIndexPath:indexPath];
-    cell.layer.cornerRadius = 5;
+    
     NSDictionary *data = [dataArr objectAtIndex:indexPath.section];
   
     if (indexPath.section == 0){
-        cell.backgroundColor = [UIColor lightGrayColor];
+        cell.backgroundColor = [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1];
+        cell.layer.cornerRadius = 0;
         cell.detailLabel.text = indexPath.row == 0?@"期数":[NSString stringWithFormat:@"%d",(int)indexPath.row -1];
     }else{
-         cell.backgroundColor = [UIColor whiteColor];
+        
+        
         NSNumber * temNum= [data objectForKey:selectKeyArr[indexPath.row]];
         if ([temNum integerValue] == 0) {
-            
-            temNum =[NSNumber numberWithInt:indexPath.row-1];
+            cell.layer.cornerRadius = cell.bounds.size.width/2;
+            temNum =[NSNumber numberWithInteger:indexPath.row-1];
             cell.backgroundColor = [UIColor greenColor];
-            
         }else{
-            cell.backgroundColor = [UIColor whiteColor];
+            cell.layer.cornerRadius = 0;
+            cell.backgroundColor =((indexPath.section%2)>0)?[UIColor colorWithRed:245.0/255 green:240.0/255 blue:240.0/255 alpha:1]: [UIColor whiteColor];
         }
             
         cell.detailLabel.text = [NSString stringWithFormat:@"%@",temNum];
@@ -148,8 +149,13 @@ static BOOL isHttping;
     [self setNowCount];
    return cell;
 }
-
-
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    RecommendInfoVC* recommendInfoVC = [[RecommendInfoVC alloc]init];
+    NSDictionary *data = [dataArr objectAtIndex:indexPath.section];
+    recommendInfoVC.recommendOutON = data[@"outNO"];
+    [self.navigationController pushViewController:recommendInfoVC animated:YES];
+    
+}
 
 -(void)setNowCount{
     
@@ -185,14 +191,6 @@ static BOOL isHttping;
     }
 }
 
-////根据原数据解析
-//- (NSArray *)analysisDataWithSourceDictionary:(NSDictionary *)sourceDictionary{
-//
-//
-//
-//
-//
-//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
