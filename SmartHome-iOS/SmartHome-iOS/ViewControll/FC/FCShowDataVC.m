@@ -135,8 +135,13 @@ static BOOL isHttping;
         
         NSNumber * temNum= [data objectForKey:selectKeyArr[indexPath.row]];
         if ([temNum integerValue] == 0) {
+<<<<<<< HEAD
             cell.layer.cornerRadius = cell.bounds.size.width/2;
             temNum =[NSNumber numberWithInteger:indexPath.row-1];
+=======
+            
+            temNum =[NSNumber numberWithInt:(int)(indexPath.row-1)];
+>>>>>>> origin/master
             cell.backgroundColor = [UIColor greenColor];
         }else{
             cell.layer.cornerRadius = 0;

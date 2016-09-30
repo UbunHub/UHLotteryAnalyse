@@ -60,7 +60,7 @@
 }
 
 -(void)reloadUIWithDic:(NSDictionary*)dataDic{
-
+    
     _geOutCode_lab.text = [NSString stringWithFormat:@"%@",[[dataDic objectForKey:@"outData"] objectForKey:@"out_ge"]];
     
     _geRecCode_lab.text = @"";
@@ -152,6 +152,10 @@
 -(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
     
     if (dataCode == 0) {
+        if (![[dataDic objectForKey:@"result"]isKindOfClass:[NSDictionary class]]) {
+            NSLog(@"返回数据为空");
+            return;
+        }
         [self reloadUIWithDic:dataDic[@"result"]];
         
     }else{
