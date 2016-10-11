@@ -23,6 +23,7 @@
 //注册按钮
 @property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 
+@property (weak, nonatomic) IBOutlet UIImageView *loginBg;
 @end
 
 @implementation LoginViewController
@@ -40,6 +41,7 @@
     _loginBtn.layer.shadowOffset = CGSizeMake(0, 0);//设置阴影偏移量
     _loginBtn.layer.shadowColor =  [[UIColor colorWithRed: 255.0/255   green:255.0/255 blue:0.0/255 alpha:1 ]CGColor];//设置阴影颜色
     _loginBtn.layer.shadowOpacity = 0.5;//设置阴影的透明度
+    [_loginBg sd_setImageWithURL:UGImage(@"LoginBg.jpg")];
 }
 
 //登录
@@ -49,9 +51,28 @@
     NSString *userName = _userName_tf.text;
     NSString *passWord = _password_tf.text;
 
-    [AlertView showAlertViewWithstyle:2001 Data:nil andDelegate:self];
-    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace logWithUserName:userName passWord:passWord];
+    HttpInterFace *httpInterFace = [[HttpInterFace alloc]init];
+    [httpInterFace logWithUserName:userName passWord:passWord beginBlock:^(NSString *mode) {
+        ;
+    } endBlock:^(NSError *error, NSDictionary *dataDic, NSString *mode) {
+        if (!error) {
+            NSDictionary *data = [dataDic objectForKey:@"result"];
+            [Global_Variable sharedInstance].userleave = [[data objectForKey:@"userLevel"]integerValue];
+            [Global_Variable sharedInstance].userId = [data objectForKey:@"userId"];
+            [Global_Variable sharedInstance].userName = [data objectForKey:@"userName"];
+            [Global_Variable sharedInstance].userTel = [data objectForKey:@"userTel"];
+            
+            TabBarViewController *tabBarViewController = [[TabBarViewController alloc]init];
+            UIWindow *awindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
+            awindow.rootViewController = tabBarViewController;
+            
+        }else{
+            
+            NSString * msg = [dataDic objectForKey:@"result"];
+            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
+            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+        }
+    }];
 }
 
 - (IBAction)registerDoit:(id)sender {
@@ -60,26 +81,5 @@
     [self.navigationController pushViewController:registerViewController animated:YES];
 }
 
--(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
-    
-    [AlertView hiddenAlertView];
-    if (dataCode == 0) {
-        NSDictionary *data = [dataDic objectForKey:@"result"];
-        [Global_Variable sharedInstance].userleave = [[data objectForKey:@"userLevel"]integerValue];
-        [Global_Variable sharedInstance].userId = [data objectForKey:@"userId"];
-        [Global_Variable sharedInstance].userName = [data objectForKey:@"userName"];
-        [Global_Variable sharedInstance].userTel = [data objectForKey:@"userTel"];
-
-        TabBarViewController *tabBarViewController = [[TabBarViewController alloc]init];
-        UIWindow *awindow = [[UIApplication sharedApplication].windows objectAtIndex:0];
-        awindow.rootViewController = tabBarViewController;
-
-    }else{
-
-        NSString * msg = [dataDic objectForKey:@"result"];
-        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
-    }
-}
 
 @end

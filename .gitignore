@@ -2,3 +2,7 @@
 *.xcuserstate
 SmartHome-iOS/SmartHome-iOS.xcworkspace/xcuserdata/*
 SmartHome-iOS/.DS_Store
+
+*.xcscheme
+
+*.xcuserstate

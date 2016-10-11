@@ -98,12 +98,31 @@ static BOOL isHttping;
     if (isHttping) {
         return;
     }
-    isHttping = YES;
+    
     
     NSString* pageNumStr = [NSString stringWithFormat:@"%d",(int)pageNum];
     
-    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace getOmitDataWithPageSize:@"20" pageNum:pageNumStr];
+    HttpInterFace *httpInterFace = [[HttpInterFace alloc]init];
+    [httpInterFace getOmitDataWithPageSize:@"20" pageNum:pageNumStr beginBlock:^(NSString *mode) {
+        isHttping = YES;
+    } endBlock:^(NSError *error, NSDictionary *dataDic, NSString *mode) {
+        isHttping = NO;
+        if (!error) {
+            if (!dataArr) {
+                dataArr = [NSMutableArray arrayWithArray:[dataDic objectForKey:@"result"]];
+            }else{
+                [dataArr addObjectsFromArray:[dataDic objectForKey:@"result"]];
+            }
+            
+            [_dataCollectionView reloadData];
+            
+        }else{
+            
+            NSString * msg = [dataDic objectForKey:@"result"];
+            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
+            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+        }
+    }];
     
 }
 
@@ -172,25 +191,7 @@ static BOOL isHttping;
     }
 }
 
--(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
-    
-    isHttping = NO;
-    if (dataCode == 0) {
-        if (!dataArr) {
-            dataArr = [NSMutableArray arrayWithArray:[dataDic objectForKey:@"result"]];
-        }else{
-            [dataArr addObjectsFromArray:[dataDic objectForKey:@"result"]];
-        }
-        
-        [_dataCollectionView reloadData];
-        
-    }else{
-        
-        NSString * msg = [dataDic objectForKey:@"result"];
-        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
-    }
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

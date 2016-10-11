@@ -41,7 +41,7 @@
 
 @end
 
-
+//福建卡萨倒海翻江可视电话附近考虑的是 v
 @implementation RecommendInfoVC
 
 - (void)viewDidLoad {
@@ -55,8 +55,24 @@
 
 -(void)getHttpDataWithProbability:(NSString*)probability{
     
-    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace getRecommendCodeWithBeginOutNO:@"2002050" EndOutNO:@"2016223" Probability:probability RecommendOutON:_recommendOutON];
+    HttpInterFace *httpInterFace = [[HttpInterFace alloc]init];
+    [httpInterFace getRecommendCodeWithBeginOutNO:@"2002050" EndOutNO:@"2016223" Probability:probability RecommendOutON:_recommendOutON beginBlock:^(NSString *mode) {
+        ;
+    } endBlock:^(NSError *error, NSDictionary *dataDic, NSString *mode) {
+        if (!error) {
+            if (![[dataDic objectForKey:@"result"]isKindOfClass:[NSDictionary class]]) {
+                NSLog(@"返回数据为空");
+                return;
+            }
+            [self reloadUIWithDic:dataDic[@"result"]];
+            
+        }else{
+            
+            NSString * msg = [dataDic objectForKey:@"result"];
+            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
+            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+        }
+    }];
 }
 
 -(void)reloadUIWithDic:(NSDictionary*)dataDic{
@@ -149,22 +165,7 @@
     [self getHttpDataWithProbability:str];
 }
 
--(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSString *)interFaceMode{
-    
-    if (dataCode == 0) {
-        if (![[dataDic objectForKey:@"result"]isKindOfClass:[NSDictionary class]]) {
-            NSLog(@"返回数据为空");
-            return;
-        }
-        [self reloadUIWithDic:dataDic[@"result"]];
-        
-    }else{
-        
-        NSString * msg = [dataDic objectForKey:@"result"];
-        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
-    }
-}
+
 
 
 - (void)didReceiveMemoryWarning {

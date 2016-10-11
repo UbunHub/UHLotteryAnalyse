@@ -24,22 +24,23 @@
 }
 
 -(void)getHttpData{
-    HttpInterFace *httpInterFace = [[HttpInterFace alloc]initWithDelegate:self];
-    [httpInterFace getUserScenarioList:[Global_Variable sharedInstance].userId userName: [Global_Variable sharedInstance].userName];
+    HttpInterFace *httpInterFace = [[HttpInterFace alloc]init];
+    [httpInterFace getUserScenarioList:[Global_Variable sharedInstance].userId userName: [Global_Variable sharedInstance].userName beginBlock:^(NSString *mode) {
+        ;
+    } endBlock:^(NSError *error, NSDictionary *dataDic, NSString *mode) {
+        if (!error) {
+            NSArray * dataArr = [dataDic objectForKey:@"result"];
+            scenarioList =[[NSMutableArray alloc]initWithArray:[UserScenarioListData getUserScenarioListWithArr:dataArr]];
+            [_collectionView reloadData];
+        }else{
+            NSString * msg = [dataDic objectForKey:@"result"];
+            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
+            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+        }
+    }];
 }
 
--(void)httpInterFaceDataCode:(NSInteger)dataCode DataDic:(NSDictionary *)dataDic interFaceMode:(NSDictionary *)interFaceMode{
 
-    if (dataCode == 0) {
-        NSArray * dataArr = [dataDic objectForKey:@"result"];
-        scenarioList =[[NSMutableArray alloc]initWithArray:[UserScenarioListData getUserScenarioListWithArr:dataArr]];
-        [_collectionView reloadData];
-    }else{
-        NSString * msg = [dataDic objectForKey:@"result"];
-        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
-    }
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return scenarioList.count+1;

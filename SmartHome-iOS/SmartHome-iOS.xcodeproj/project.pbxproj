@@ -41,9 +41,6 @@
 		2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2057FA9D1C892B1300CC65FD /* LoginViewController.xib */; };
 		2057FA9F1C892B1300CC65FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2057FA9D1C892B1300CC65FD /* LoginViewController.xib */; };
 		2057FAA01C892B1300CC65FD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2057FA9D1C892B1300CC65FD /* LoginViewController.xib */; };
-		2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
-		2057FAAB1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
-		2057FAAC1C89341700CC65FD /* HttpRequest_OS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057FAA91C89341700CC65FD /* HttpRequest_OS.m */; };
 		2068A2281CC74C770026EC0F /* UserScenarioListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A2271CC74C770026EC0F /* UserScenarioListData.m */; };
 		2068A22B1CC76CD10026EC0F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A22A1CC76CD10026EC0F /* TabBarViewController.m */; };
 		2068A2371CC772FF0026EC0F /* GoodsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A2351CC772FF0026EC0F /* GoodsListVC.m */; };
@@ -137,8 +134,6 @@
 		2057FA951C892A2B00CC65FD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2057FA9D1C892B1300CC65FD /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2057FAA11C89312F00CC65FD /* DefineValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineValue.h; sourceTree = "<group>"; };
-		2057FAA81C89341700CC65FD /* HttpRequest_OS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest_OS.h; sourceTree = "<group>"; };
-		2057FAA91C89341700CC65FD /* HttpRequest_OS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest_OS.m; sourceTree = "<group>"; };
 		2068A2261CC74C770026EC0F /* UserScenarioListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserScenarioListData.h; sourceTree = "<group>"; };
 		2068A2271CC74C770026EC0F /* UserScenarioListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserScenarioListData.m; sourceTree = "<group>"; };
 		2068A2291CC76CD10026EC0F /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
@@ -379,8 +374,6 @@
 		2057FAA71C89340B00CC65FD /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
-				2057FAA81C89341700CC65FD /* HttpRequest_OS.h */,
-				2057FAA91C89341700CC65FD /* HttpRequest_OS.m */,
 				207734CC1C913BD100B5F18B /* HttpInterFace.h */,
 				207734CD1C913BD100B5F18B /* HttpInterFace.m */,
 			);
@@ -704,7 +697,6 @@
 				207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */,
 				20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */,
 				20AD6A0A1CE0E492005CE2ED /* MessageView_2002.m in Sources */,
-				2057FAAA1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 				2057FA961C892A2B00CC65FD /* LoginViewController.m in Sources */,
 				2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */,
 				2068A2371CC772FF0026EC0F /* GoodsListVC.m in Sources */,
@@ -734,7 +726,6 @@
 				2057FA5F1C8923C900CC65FD /* SmartHome_iOSTests.m in Sources */,
 				2057FA911C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
 				2057FA971C892A2B00CC65FD /* LoginViewController.m in Sources */,
-				2057FAAB1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +739,6 @@
 				2057FA6A1C8923C900CC65FD /* SmartHome_iOSUITests.m in Sources */,
 				2057FA921C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
 				2057FA981C892A2B00CC65FD /* LoginViewController.m in Sources */,
-				2057FAAC1C89341700CC65FD /* HttpRequest_OS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

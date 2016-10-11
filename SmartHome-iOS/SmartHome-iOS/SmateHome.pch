@@ -14,4 +14,5 @@
 #import "DefineValue.h"
 #import "AlertView.h"
 #import "Dbglog.h"
+#import "EnumValue.h"
 #endif /* SmateHome_pch */

@@ -13,6 +13,14 @@
 #define Screen_height   [[UIScreen mainScreen] bounds].size.height
 #define Screen_width    [[UIScreen mainScreen] bounds].size.width
 
+#define InterFacePort  8889
+
+//#define InterFaceIP   @"http://localhost"
+#define InterFaceIP   @"http://45.78.9.162"
+
+#define UGImage(image)   [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost/UbunGit/UHPySever/Image/%@",image]]
+
+#define UGColor(redValue,greenValue,BlueValue,alphaValue)  [UIColor colorWithRed:redValue/255.0 green:greenValue/255.0 blue:BlueValue/255.0 alpha:alphaValue]
 
 #define dispatch_main_sync_safe(block)\
 if ([NSThread isMainThread]) {\

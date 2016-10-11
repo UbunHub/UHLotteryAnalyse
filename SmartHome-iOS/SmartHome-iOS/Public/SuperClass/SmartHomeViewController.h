@@ -10,6 +10,6 @@
 #import "HttpInterFace.h"
 #import "Global_Variable.h"
 
-@interface SmartHomeViewController : UIViewController<HttpInterFaceDelegate>
+@interface SmartHomeViewController : UIViewController
 
 @end
