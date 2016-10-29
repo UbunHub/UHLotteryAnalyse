@@ -12,6 +12,7 @@
 #import "BluetoothListVC.h"
 #import "AboutUsVC.h"
 #import "FCShowDataVC.h"
+#import "UHWebViewController.h"
 @interface TabBarViewController ()
 
 @end
@@ -21,8 +22,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    DeviceGroupVC *deviceGroupVC = [[DeviceGroupVC alloc]init];
-    UINavigationController *deviceGroupNav = [[UINavigationController alloc]initWithRootViewController:deviceGroupVC];
+    UHWebViewController *webViewcornller = [[UHWebViewController alloc]init];
+    webViewcornller.weburl = [NSURL URLWithString:[NSString stringWithFormat:@"%@/xiaoqy/",InterFaceIP]];
+    UINavigationController *webViewNav = [[UINavigationController alloc]initWithRootViewController:webViewcornller];
 
     FCShowDataVC *fcShowDataVC = [[FCShowDataVC alloc]init];
     UINavigationController *fcShowDataNav = [[UINavigationController alloc]initWithRootViewController:fcShowDataVC];
@@ -35,7 +37,7 @@
     AboutUsVC *aboutUsVC = [[AboutUsVC alloc]init];
     UINavigationController *aboutUsNav = [[UINavigationController alloc]initWithRootViewController:aboutUsVC];
 
-    self.viewControllers = [NSArray arrayWithObjects:fcShowDataNav,deviceGroupNav,bluetoothListNav,aboutUsNav, nil];
+    self.viewControllers = [NSArray arrayWithObjects:fcShowDataNav,webViewNav,bluetoothListNav,aboutUsNav, nil];
 
     UITabBar *tabBar= self.tabBar;
 
