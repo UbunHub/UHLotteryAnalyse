@@ -45,31 +45,24 @@
 		2068A22B1CC76CD10026EC0F /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A22A1CC76CD10026EC0F /* TabBarViewController.m */; };
 		2068A2371CC772FF0026EC0F /* GoodsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A2351CC772FF0026EC0F /* GoodsListVC.m */; };
 		2068A2381CC772FF0026EC0F /* GoodsListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2068A2361CC772FF0026EC0F /* GoodsListVC.xib */; };
-		2068A23F1CC7835A0026EC0F /* DeviceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A23E1CC7835A0026EC0F /* DeviceCenter.m */; };
-		2068A2421CC78AA50026EC0F /* BluetoothListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A2411CC78AA50026EC0F /* BluetoothListVC.m */; };
-		2068A2441CC78AB20026EC0F /* BluetoothListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2068A2431CC78AB20026EC0F /* BluetoothListVC.xib */; };
-		2068A2481CC8B1C60026EC0F /* BluetoothDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068A2461CC8B1C60026EC0F /* BluetoothDetailsVC.m */; };
-		2068A2491CC8B1C60026EC0F /* BluetoothDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2068A2471CC8B1C60026EC0F /* BluetoothDetailsVC.xib */; };
 		207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 207734CD1C913BD100B5F18B /* HttpInterFace.m */; };
-		207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F12781CC0BECD009B9920 /* DeviceGroupVC.m */; };
-		207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */; };
-		207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 207F12811CC0FB22009B9920 /* DeviceGroupCell.m */; };
-		207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */; };
-		20AD69DB1CE08A65005CE2ED /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69D71CE08A65005CE2ED /* AlertView.m */; };
-		20AD69DC1CE08A65005CE2ED /* AlertView_1001.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69D91CE08A65005CE2ED /* AlertView_1001.m */; };
-		20AD69DD1CE08A65005CE2ED /* AlertView_1001.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */; };
 		20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69FD1CE0BC09005CE2ED /* RoundedUIButton.m */; };
 		20AD6A011CE0BC09005CE2ED /* TButtonWithInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD69FF1CE0BC09005CE2ED /* TButtonWithInfo.m */; };
-		20AD6A0A1CE0E492005CE2ED /* MessageView_2002.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD6A081CE0E492005CE2ED /* MessageView_2002.m */; };
-		20AD6A0B1CE0E492005CE2ED /* MessageView_2002.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */; };
 		20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD6A0E1CE10303005CE2ED /* AboutUsVC.m */; };
 		20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */; };
-		20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20B1F1011CE5D7F6002BC58D /* WavaSever.mm */; };
-		4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51472C9056CF3EB7CAE501D /* libPods.a */; };
+		563DB87B1E1385630079C508 /* EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563DB8641E1385630079C508 /* EmptyView.m */; };
+		563DB87C1E1385630079C508 /* EmptyViewDefaul.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563DB8651E1385630079C508 /* EmptyViewDefaul.xib */; };
+		563DB87F1E1385630079C508 /* UHAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563DB86B1E1385630079C508 /* UHAlertManager.m */; };
+		563DB8801E1385630079C508 /* UHAlertView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 563DB86C1E1385630079C508 /* UHAlertView.podspec */; };
+		563DB8811E1385630079C508 /* UHAlertviewSuperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 563DB86E1E1385630079C508 /* UHAlertviewSuperVC.m */; };
+		563DB8841E1385630079C508 /* UHDefaulAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 563DB8731E1385630079C508 /* UHDefaulAlert.m */; };
+		563DB8851E1385630079C508 /* UHDefaulAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563DB8741E1385630079C508 /* UHDefaulAlert.xib */; };
+		563DB8881E1385630079C508 /* UHException.m in Sources */ = {isa = PBXBuildFile; fileRef = 563DB87A1E1385630079C508 /* UHException.m */; };
 		56BA48CE1DC4C0E400D25206 /* UHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BA48CC1DC4C0E400D25206 /* UHWebViewController.m */; };
 		56BA48CF1DC4C0E400D25206 /* UHWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56BA48CD1DC4C0E400D25206 /* UHWebViewController.xib */; };
 		6590DB841D75282A005CB613 /* FCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590DB821D75282A005CB613 /* FCCollectionViewCell.m */; };
 		6590DB851D75282A005CB613 /* FCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6590DB831D75282A005CB613 /* FCCollectionViewCell.xib */; };
+		99721B12CE074BB0313A9465 /* libPods-SmartHome-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC3A2A53546F42C581B2476 /* libPods-SmartHome-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +83,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2013308F1D657D4400943C0D /* FCShowDataVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCShowDataVC.h; sourceTree = "<group>"; };
 		201330901D657D4400943C0D /* FCShowDataVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCShowDataVC.m; sourceTree = "<group>"; };
 		201330911D657D4400943C0D /* FCShowDataVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCShowDataVC.xib; sourceTree = "<group>"; };
@@ -143,50 +135,39 @@
 		2068A2341CC772FF0026EC0F /* GoodsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsListVC.h; sourceTree = "<group>"; };
 		2068A2351CC772FF0026EC0F /* GoodsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsListVC.m; sourceTree = "<group>"; };
 		2068A2361CC772FF0026EC0F /* GoodsListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodsListVC.xib; sourceTree = "<group>"; };
-		2068A23D1CC7835A0026EC0F /* DeviceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCenter.h; sourceTree = "<group>"; };
-		2068A23E1CC7835A0026EC0F /* DeviceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCenter.m; sourceTree = "<group>"; };
-		2068A2401CC78AA50026EC0F /* BluetoothListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothListVC.h; sourceTree = "<group>"; };
-		2068A2411CC78AA50026EC0F /* BluetoothListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothListVC.m; sourceTree = "<group>"; };
-		2068A2431CC78AB20026EC0F /* BluetoothListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothListVC.xib; sourceTree = "<group>"; };
-		2068A2451CC8B1C60026EC0F /* BluetoothDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothDetailsVC.h; sourceTree = "<group>"; };
-		2068A2461CC8B1C60026EC0F /* BluetoothDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothDetailsVC.m; sourceTree = "<group>"; };
-		2068A2471CC8B1C60026EC0F /* BluetoothDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BluetoothDetailsVC.xib; sourceTree = "<group>"; };
 		207734CC1C913BD100B5F18B /* HttpInterFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInterFace.h; sourceTree = "<group>"; };
 		207734CD1C913BD100B5F18B /* HttpInterFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpInterFace.m; sourceTree = "<group>"; };
-		207F12771CC0BECD009B9920 /* DeviceGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroupVC.h; sourceTree = "<group>"; };
-		207F12781CC0BECD009B9920 /* DeviceGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceGroupVC.m; sourceTree = "<group>"; };
-		207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceGroupVC.xib; sourceTree = "<group>"; };
-		207F12801CC0FB22009B9920 /* DeviceGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroupCell.h; sourceTree = "<group>"; };
-		207F12811CC0FB22009B9920 /* DeviceGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceGroupCell.m; sourceTree = "<group>"; };
-		207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceGroupCell.xib; sourceTree = "<group>"; };
-		20AD69D61CE08A65005CE2ED /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
-		20AD69D71CE08A65005CE2ED /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
-		20AD69D81CE08A65005CE2ED /* AlertView_1001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView_1001.h; sourceTree = "<group>"; };
-		20AD69D91CE08A65005CE2ED /* AlertView_1001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView_1001.m; sourceTree = "<group>"; };
-		20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView_1001.xib; sourceTree = "<group>"; };
 		20AD69DF1CE096F2005CE2ED /* SmateHome.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmateHome.pch; sourceTree = "<group>"; };
-		20AD69E01CE0B974005CE2ED /* AlertViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewControllerDelegate.h; sourceTree = "<group>"; };
 		20AD69FC1CE0BC09005CE2ED /* RoundedUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedUIButton.h; sourceTree = "<group>"; };
 		20AD69FD1CE0BC09005CE2ED /* RoundedUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedUIButton.m; sourceTree = "<group>"; };
 		20AD69FE1CE0BC09005CE2ED /* TButtonWithInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TButtonWithInfo.h; sourceTree = "<group>"; };
 		20AD69FF1CE0BC09005CE2ED /* TButtonWithInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TButtonWithInfo.m; sourceTree = "<group>"; };
-		20AD6A071CE0E492005CE2ED /* MessageView_2002.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView_2002.h; sourceTree = "<group>"; };
-		20AD6A081CE0E492005CE2ED /* MessageView_2002.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView_2002.m; sourceTree = "<group>"; };
-		20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageView_2002.xib; sourceTree = "<group>"; };
 		20AD6A0D1CE10303005CE2ED /* AboutUsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
 		20AD6A0E1CE10303005CE2ED /* AboutUsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsVC.m; sourceTree = "<group>"; };
 		20AD6A0F1CE10303005CE2ED /* AboutUsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
 		20AD6A121CE2D5C2005CE2ED /* Dbglog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dbglog.h; sourceTree = "<group>"; };
-		20B1F1011CE5D7F6002BC58D /* WavaSever.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavaSever.mm; sourceTree = "<group>"; };
-		20B1F1021CE5D7F6002BC58D /* WavaSever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavaSever.h; sourceTree = "<group>"; };
+		563DB8631E1385630079C508 /* EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyView.h; sourceTree = "<group>"; };
+		563DB8641E1385630079C508 /* EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyView.m; sourceTree = "<group>"; };
+		563DB8651E1385630079C508 /* EmptyViewDefaul.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyViewDefaul.xib; sourceTree = "<group>"; };
+		563DB86A1E1385630079C508 /* UHAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHAlertManager.h; sourceTree = "<group>"; };
+		563DB86B1E1385630079C508 /* UHAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHAlertManager.m; sourceTree = "<group>"; };
+		563DB86C1E1385630079C508 /* UHAlertView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UHAlertView.podspec; sourceTree = "<group>"; };
+		563DB86D1E1385630079C508 /* UHAlertviewSuperVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHAlertviewSuperVC.h; sourceTree = "<group>"; };
+		563DB86E1E1385630079C508 /* UHAlertviewSuperVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHAlertviewSuperVC.m; sourceTree = "<group>"; };
+		563DB8721E1385630079C508 /* UHDefaulAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHDefaulAlert.h; sourceTree = "<group>"; };
+		563DB8731E1385630079C508 /* UHDefaulAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHDefaulAlert.m; sourceTree = "<group>"; };
+		563DB8741E1385630079C508 /* UHDefaulAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UHDefaulAlert.xib; sourceTree = "<group>"; };
+		563DB8791E1385630079C508 /* UHException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHException.h; sourceTree = "<group>"; };
+		563DB87A1E1385630079C508 /* UHException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHException.m; sourceTree = "<group>"; };
 		56BA48CB1DC4C0E400D25206 /* UHWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UHWebViewController.h; sourceTree = "<group>"; };
 		56BA48CC1DC4C0E400D25206 /* UHWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UHWebViewController.m; sourceTree = "<group>"; };
 		56BA48CD1DC4C0E400D25206 /* UHWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UHWebViewController.xib; sourceTree = "<group>"; };
 		6590DB811D75282A005CB613 /* FCCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCollectionViewCell.h; sourceTree = "<group>"; };
 		6590DB821D75282A005CB613 /* FCCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCCollectionViewCell.m; sourceTree = "<group>"; };
 		6590DB831D75282A005CB613 /* FCCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCCollectionViewCell.xib; sourceTree = "<group>"; };
-		6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		F51472C9056CF3EB7CAE501D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC3A2A53546F42C581B2476 /* libPods-SmartHome-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartHome-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7B8C4B8D02FA225918CC97 /* Pods-SmartHome-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome-iOS/Pods-SmartHome-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5A7F301212AD65672AB2B6 /* Pods-SmartHome-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartHome-iOS/Pods-SmartHome-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3B257B940D743A37F6C6FF /* libPods.a in Frameworks */,
+				99721B12CE074BB0313A9465 /* libPods-SmartHome-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +244,8 @@
 				2057FA5D1C8923C900CC65FD /* SmartHome-iOSTests */,
 				2057FA681C8923C900CC65FD /* SmartHome-iOSUITests */,
 				2057FA421C8923C900CC65FD /* Products */,
-				61B00A078400281620494CC1 /* Pods */,
-				4BFF34FAD52DCC1621AE8C10 /* Frameworks */,
+				432673D3849969DE5E175DF5 /* Pods */,
+				391AE5980A715C9D9CA809F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,10 +262,9 @@
 		2057FA431C8923C900CC65FD /* SmartHome-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				563DB8611E1385630079C508 /* MyNSException */,
 				2068A2251CC74C5E0026EC0F /* Mode */,
 				20AD69FA1CE0BBFA005CE2ED /* TOOL */,
-				2073476E1CD8A9200045757B /* ErrorAndMessageView */,
-				2068A2391CC77F650026EC0F /* DeviceAccess */,
 				207F12731CC0BE50009B9920 /* ViewControll */,
 				2057FA931C8929FE00CC65FD /* Login */,
 				2057FA801C8925AE00CC65FD /* Public */,
@@ -395,54 +375,15 @@
 			path = ViewControll/Mode;
 			sourceTree = "<group>";
 		};
-		2068A2391CC77F650026EC0F /* DeviceAccess */ = {
-			isa = PBXGroup;
-			children = (
-				2068A23D1CC7835A0026EC0F /* DeviceCenter.h */,
-				2068A23E1CC7835A0026EC0F /* DeviceCenter.m */,
-				20B1F1011CE5D7F6002BC58D /* WavaSever.mm */,
-				20B1F1021CE5D7F6002BC58D /* WavaSever.h */,
-			);
-			path = DeviceAccess;
-			sourceTree = "<group>";
-		};
-		2073476E1CD8A9200045757B /* ErrorAndMessageView */ = {
-			isa = PBXGroup;
-			children = (
-				20AD69D61CE08A65005CE2ED /* AlertView.h */,
-				20AD69D71CE08A65005CE2ED /* AlertView.m */,
-				20AD69D81CE08A65005CE2ED /* AlertView_1001.h */,
-				20AD69D91CE08A65005CE2ED /* AlertView_1001.m */,
-				20AD69DA1CE08A65005CE2ED /* AlertView_1001.xib */,
-				20AD6A071CE0E492005CE2ED /* MessageView_2002.h */,
-				20AD6A081CE0E492005CE2ED /* MessageView_2002.m */,
-				20AD6A091CE0E492005CE2ED /* MessageView_2002.xib */,
-				20AD69E01CE0B974005CE2ED /* AlertViewControllerDelegate.h */,
-			);
-			path = ErrorAndMessageView;
-			sourceTree = "<group>";
-		};
 		207F12731CC0BE50009B9920 /* ViewControll */ = {
 			isa = PBXGroup;
 			children = (
 				56BA48CA1DC4C08700D25206 /* WebViewController */,
 				201330841D6573E800943C0D /* FC */,
 				20AD6A0C1CE102E5005CE2ED /* AboutUs */,
-				207F12771CC0BECD009B9920 /* DeviceGroupVC.h */,
-				207F12781CC0BECD009B9920 /* DeviceGroupVC.m */,
-				207F127A1CC0BEE1009B9920 /* DeviceGroupVC.xib */,
-				2068A2451CC8B1C60026EC0F /* BluetoothDetailsVC.h */,
-				2068A2461CC8B1C60026EC0F /* BluetoothDetailsVC.m */,
-				2068A2471CC8B1C60026EC0F /* BluetoothDetailsVC.xib */,
-				207F12801CC0FB22009B9920 /* DeviceGroupCell.h */,
-				207F12811CC0FB22009B9920 /* DeviceGroupCell.m */,
-				207F12821CC0FB22009B9920 /* DeviceGroupCell.xib */,
 				2068A2341CC772FF0026EC0F /* GoodsListVC.h */,
 				2068A2351CC772FF0026EC0F /* GoodsListVC.m */,
 				2068A2361CC772FF0026EC0F /* GoodsListVC.xib */,
-				2068A2401CC78AA50026EC0F /* BluetoothListVC.h */,
-				2068A2411CC78AA50026EC0F /* BluetoothListVC.m */,
-				2068A2431CC78AB20026EC0F /* BluetoothListVC.xib */,
 			);
 			path = ViewControll;
 			sourceTree = "<group>";
@@ -476,12 +417,57 @@
 			path = AboutUs;
 			sourceTree = "<group>";
 		};
-		4BFF34FAD52DCC1621AE8C10 /* Frameworks */ = {
+		391AE5980A715C9D9CA809F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F51472C9056CF3EB7CAE501D /* libPods.a */,
+				9DC3A2A53546F42C581B2476 /* libPods-SmartHome-iOS.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		432673D3849969DE5E175DF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC7B8C4B8D02FA225918CC97 /* Pods-SmartHome-iOS.debug.xcconfig */,
+				ED5A7F301212AD65672AB2B6 /* Pods-SmartHome-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		563DB8611E1385630079C508 /* MyNSException */ = {
+			isa = PBXGroup;
+			children = (
+				563DB8621E1385630079C508 /* EmptyView */,
+				563DB8661E1385630079C508 /* UHAlertView */,
+				563DB8791E1385630079C508 /* UHException.h */,
+				563DB87A1E1385630079C508 /* UHException.m */,
+			);
+			path = MyNSException;
+			sourceTree = "<group>";
+		};
+		563DB8621E1385630079C508 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				563DB8631E1385630079C508 /* EmptyView.h */,
+				563DB8641E1385630079C508 /* EmptyView.m */,
+				563DB8651E1385630079C508 /* EmptyViewDefaul.xib */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		563DB8661E1385630079C508 /* UHAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				563DB86A1E1385630079C508 /* UHAlertManager.h */,
+				563DB86B1E1385630079C508 /* UHAlertManager.m */,
+				563DB86C1E1385630079C508 /* UHAlertView.podspec */,
+				563DB86D1E1385630079C508 /* UHAlertviewSuperVC.h */,
+				563DB86E1E1385630079C508 /* UHAlertviewSuperVC.m */,
+				563DB8721E1385630079C508 /* UHDefaulAlert.h */,
+				563DB8731E1385630079C508 /* UHDefaulAlert.m */,
+				563DB8741E1385630079C508 /* UHDefaulAlert.xib */,
+			);
+			path = UHAlertView;
 			sourceTree = "<group>";
 		};
 		56BA48CA1DC4C08700D25206 /* WebViewController */ = {
@@ -494,15 +480,6 @@
 			path = WebViewController;
 			sourceTree = "<group>";
 		};
-		61B00A078400281620494CC1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */,
-				6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,12 +487,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2057FA6E1C8923C900CC65FD /* Build configuration list for PBXNativeTarget "SmartHome-iOS" */;
 			buildPhases = (
-				F12D02DF005185E1DB0DF832 /* Check Pods Manifest.lock */,
+				49A07B6D7483F7DDB5E3D487 /* [CP] Check Pods Manifest.lock */,
 				2057FA3D1C8923C900CC65FD /* Sources */,
 				2057FA3E1C8923C900CC65FD /* Frameworks */,
 				2057FA3F1C8923C900CC65FD /* Resources */,
-				5A34BAE9455D56DABF92DEC1 /* Embed Pods Frameworks */,
-				B33EE8BEF6065D3BB06D0545 /* Copy Pods Resources */,
+				B3535417C4476E2A3B894429 /* [CP] Embed Pods Frameworks */,
+				E9BF0B670B985CBB61969DAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -568,7 +545,7 @@
 		2057FA391C8923C900CC65FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = xiaoqy;
 				TargetAttributes = {
 					2057FA401C8923C900CC65FD = {
@@ -615,18 +592,15 @@
 				2057FA541C8923C900CC65FD /* LaunchScreen.storyboard in Resources */,
 				56BA48CF1DC4C0E400D25206 /* UHWebViewController.xib in Resources */,
 				201330A51D6729C000943C0D /* RecommendInfoVC.xib in Resources */,
-				2068A2491CC8B1C60026EC0F /* BluetoothDetailsVC.xib in Resources */,
-				207F127B1CC0BEE1009B9920 /* DeviceGroupVC.xib in Resources */,
 				2057FA511C8923C900CC65FD /* Assets.xcassets in Resources */,
 				201330931D657D4400943C0D /* FCShowDataVC.xib in Resources */,
 				6590DB851D75282A005CB613 /* FCCollectionViewCell.xib in Resources */,
 				2057FA9E1C892B1300CC65FD /* LoginViewController.xib in Resources */,
 				20AD6A111CE10303005CE2ED /* AboutUsVC.xib in Resources */,
+				563DB87C1E1385630079C508 /* EmptyViewDefaul.xib in Resources */,
+				563DB8801E1385630079C508 /* UHAlertView.podspec in Resources */,
 				2047BFFA1C91125F006E418E /* RegisterViewController.xib in Resources */,
-				207F12841CC0FB22009B9920 /* DeviceGroupCell.xib in Resources */,
-				2068A2441CC78AB20026EC0F /* BluetoothListVC.xib in Resources */,
-				20AD69DD1CE08A65005CE2ED /* AlertView_1001.xib in Resources */,
-				20AD6A0B1CE0E492005CE2ED /* MessageView_2002.xib in Resources */,
+				563DB8851E1385630079C508 /* UHDefaulAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,49 +623,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5A34BAE9455D56DABF92DEC1 /* Embed Pods Frameworks */ = {
+		49A07B6D7483F7DDB5E3D487 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B33EE8BEF6065D3BB06D0545 /* Copy Pods Resources */ = {
+		B3535417C4476E2A3B894429 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHome-iOS/Pods-SmartHome-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F12D02DF005185E1DB0DF832 /* Check Pods Manifest.lock */ = {
+		E9BF0B670B985CBB61969DAF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartHome-iOS/Pods-SmartHome-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -705,31 +679,27 @@
 				6590DB841D75282A005CB613 /* FCCollectionViewCell.m in Sources */,
 				2039D2B61D34E3EB00E0EA55 /* DataDownloader.m in Sources */,
 				2057FA491C8923C900CC65FD /* AppDelegate.m in Sources */,
-				207F12831CC0FB22009B9920 /* DeviceGroupCell.m in Sources */,
+				563DB8881E1385630079C508 /* UHException.m in Sources */,
 				2068A22B1CC76CD10026EC0F /* TabBarViewController.m in Sources */,
 				2068A2281CC74C770026EC0F /* UserScenarioListData.m in Sources */,
+				563DB87F1E1385630079C508 /* UHAlertManager.m in Sources */,
 				2057FA8B1C89270E00CC65FD /* NSString+NSStringCategory.m in Sources */,
-				2068A2421CC78AA50026EC0F /* BluetoothListVC.m in Sources */,
-				2068A2481CC8B1C60026EC0F /* BluetoothDetailsVC.m in Sources */,
 				56BA48CE1DC4C0E400D25206 /* UHWebViewController.m in Sources */,
 				2039D2B21D34DB2C00E0EA55 /* DataCache.m in Sources */,
-				20AD69DB1CE08A65005CE2ED /* AlertView.m in Sources */,
-				207F12791CC0BECD009B9920 /* DeviceGroupVC.m in Sources */,
+				563DB87B1E1385630079C508 /* EmptyView.m in Sources */,
 				20AD6A101CE10303005CE2ED /* AboutUsVC.m in Sources */,
-				20AD6A0A1CE0E492005CE2ED /* MessageView_2002.m in Sources */,
 				2057FA961C892A2B00CC65FD /* LoginViewController.m in Sources */,
 				2047BFF91C91125F006E418E /* RegisterViewController.m in Sources */,
 				2068A2371CC772FF0026EC0F /* GoodsListVC.m in Sources */,
 				2057FA851C89267C00CC65FD /* Global_Variable.m in Sources */,
 				201330A41D6729C000943C0D /* RecommendInfoVC.m in Sources */,
 				2036D6EA1C89391A00C72E0A /* NSDictionary+NSDictionaryCategory.m in Sources */,
-				20B1F1031CE5D7F6002BC58D /* WavaSever.mm in Sources */,
-				20AD69DC1CE08A65005CE2ED /* AlertView_1001.m in Sources */,
+				563DB8841E1385630079C508 /* UHDefaulAlert.m in Sources */,
 				201330921D657D4400943C0D /* FCShowDataVC.m in Sources */,
 				2039D2B91D34E91D00E0EA55 /* DataDownloaderOperation.m in Sources */,
 				2057FA461C8923C900CC65FD /* main.m in Sources */,
 				2057FA901C8928F900CC65FD /* SmartHomeViewController.m in Sources */,
-				2068A23F1CC7835A0026EC0F /* DeviceCenter.m in Sources */,
+				563DB8811E1385630079C508 /* UHAlertviewSuperVC.m in Sources */,
 				20AD6A001CE0BC09005CE2ED /* RoundedUIButton.m in Sources */,
 				207734CE1C913BD100B5F18B /* HttpInterFace.m in Sources */,
 				2039D2AC1D34D7C200E0EA55 /* HttpDownloadManager.m in Sources */,
@@ -802,8 +772,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 强源 萧 (B3M9XCD6K5)";
@@ -846,8 +818,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 强源 萧 (B3M9XCD6K5)";
@@ -873,13 +847,15 @@
 		};
 		2057FA6F1C8923C900CC65FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AA091B3D1A6C359B4B0805C /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BC7B8C4B8D02FA225918CC97 /* Pods-SmartHome-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8CENBMW6TW;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";
@@ -897,13 +873,15 @@
 		};
 		2057FA701C8923C900CC65FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BEB7F6FA3CB870BDA5A92D0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = ED5A7F301212AD65672AB2B6 /* Pods-SmartHome-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chou Jun Hao (PZ4AX537TW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8CENBMW6TW;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartHome-iOS/SmateHome.pch";
 				INFOPLIST_FILE = "SmartHome-iOS/Info.plist";

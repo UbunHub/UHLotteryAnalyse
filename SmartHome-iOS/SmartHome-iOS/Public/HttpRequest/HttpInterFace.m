@@ -29,7 +29,7 @@
         default:
             break;
     }
- 
+    
     NSString *urlStr = [NSString stringWithFormat:@"%@:%d/%@",InterFaceIP,InterFacePort,interPath];
     NSURL *url = [NSURL URLWithString:urlStr];
     DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n请求参数：%@\n---------end----------\n\n",url,requestStr );
@@ -42,26 +42,24 @@
                            NSError *httpErr;
                            NSDictionary *dataDic;
                            
-                           
                            if (error ) {
                                
                                httpErr = error;
                                
                            } else if(!responseObject){
                                
-                               
                                httpErr = [NSError errorWithDomain:@"返回数据为空" code:10001 userInfo:nil];
                            }else{
                                
                                NSDictionary *dic =(NSDictionary*)responseObject;
+                               dataDic =dic;
                                NSInteger dataCode = [[dic objectForKey:@"inforCode"]integerValue];
                                if (dataCode!=0) {
-                                   httpErr = [NSError errorWithDomain:[dataDic objectForKey:@"result"] code:dataCode userInfo:nil];
-                               }else{
-                                   dataDic = dic;
+                                   httpErr = [NSError errorWithDomain:[dic objectForKey:@"result"] code:dataCode userInfo:nil];
                                }
                            }
                            if (endBlock) {
+                               DbgLog(@"\n-------bengin--------\n请求接口路径：%@ \n返回数据：%@\n---------end----------\n\n",url,dataDic );
                                endBlock(httpErr,dataDic,interFaceMode);
                            }
                            

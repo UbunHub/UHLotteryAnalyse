@@ -16,9 +16,10 @@
 #define InterFacePort  8889
 
 //#define InterFaceIP   @"http://localhost"
-#define InterFaceIP   @"http://45.78.9.162"
+#define InterFaceIP   @"http://192.168.1.27"
+//#define InterFaceIP   @"http://45.78.9.162"
 
-#define UGImage(image)   [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost/UbunGit/UHPySever/Image/%@",image]]
+#define UGImage(image)   [NSURL URLWithString:[NSString stringWithFormat:@"%@/xiaoqy/UHPySever/Image/%@",InterFaceIP,image]]
 
 #define UGColor(redValue,greenValue,BlueValue,alphaValue)  [UIColor colorWithRed:redValue/255.0 green:greenValue/255.0 blue:BlueValue/255.0 alpha:alphaValue]
 

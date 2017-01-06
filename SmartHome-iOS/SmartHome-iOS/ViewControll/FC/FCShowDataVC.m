@@ -119,8 +119,9 @@ static BOOL isHttping;
         }else{
             
             NSString * msg = [dataDic objectForKey:@"result"];
-            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+            [UHAlertManager alertSysMessage:msg title:@"温馨提示" Controller:self clickBlock:^(id sender, UIViewController *info) {
+                ;
+            } button:@"确定",nil];
         }
     }];
     

@@ -48,14 +48,16 @@
             }else{
                 
                 NSString * msg = [dataDic objectForKey:@"result"];
-                NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-                [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+                [UHAlertManager alertSysMessage:msg title:@"温馨提示" Controller:self clickBlock:^(id sender, UIViewController *info) {
+                    ;
+                } button:@"确定",nil];
             }
         }];
     }else{
 
-        NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:@"两次输入密码不一致",@"remark",nil];
-        [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+        [UHAlertManager alertSysMessage:@"两次输入密码不一致" title:@"温馨提示" Controller:self clickBlock:^(id sender, UIViewController *info) {
+            ;
+        } button:@"确定",nil];
     }
 }
 

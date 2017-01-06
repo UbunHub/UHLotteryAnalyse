@@ -12,6 +12,7 @@
 #import "HttpDownloadManager.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
+
 @interface LoginViewController()
 
 //用户名输入框
@@ -68,9 +69,7 @@
             
         }else{
             
-            NSString * msg = [dataDic objectForKey:@"result"];
-            NSDictionary *dic = [[NSDictionary alloc]initWithObjectsAndKeys:msg,@"remark",nil];
-            [AlertView showAlertViewWithstyle:1001 Data:dic andDelegate:nil];
+            [UHAlertManager alertSysMessage:error.domain title:@"温馨提示" Controller:self clickBlock:nil button:@"确定",nil];
         }
     }];
 }

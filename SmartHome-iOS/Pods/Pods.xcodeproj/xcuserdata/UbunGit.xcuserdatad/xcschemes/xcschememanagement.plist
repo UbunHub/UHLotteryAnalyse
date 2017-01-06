@@ -6,43 +6,63 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<true/>
 		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<true/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Pods-SmartHome-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>YYImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>55DBDD8B7D446F1D618F303A9FB53209</key>
+		<key>0659B71386995AC7EE2A305F0A360EB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60A0AADB1F7360B288165F3C4CB8E774</key>
+		<key>0FFBCD9EDFE287FBE9EAFF13561A677F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>175B076ED45EB1A3E40F58BA14036467</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3A890D5EA1FA0F9A8D6E315BAAD543D</key>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEB231B1685B6B251994F3B509E5F185</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBF597250C15681B314B1B408C86C1A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

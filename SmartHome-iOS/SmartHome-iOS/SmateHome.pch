@@ -12,7 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "DefineValue.h"
-#import "AlertView.h"
+#import "UHAlertManager.h"
 #import "Dbglog.h"
 #import "EnumValue.h"
+#import "Global_Variable.h"
 #endif /* SmateHome_pch */
